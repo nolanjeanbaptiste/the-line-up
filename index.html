@@ -5,44 +5,123 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <!-- ============================================================
-     SEO — à personnaliser : téléphone réel, image de partage
+     SEO
+     Un seul endroit à changer le jour du vrai domaine : SITE_URL
+     ci-dessous, le canonical, og:url et le JSON-LD.
      ============================================================ -->
-<title>The Line Up — Barber Shop Paris 20e | Coupe, Dégradé, Barbe</title>
-<meta name="description" content="The Line Up, barber shop au 265 rue des Pyrénées, Paris 20e. Dégradés, coupes tendance, barbe. Réservation en ligne en 30 secondes. Ouvert du mardi au samedi.">
+<title>Barber Shop Paris 20e — The Line Up | Dégradé, Barbe, Coupe à la tondeuse</title>
+<meta name="description" content="Barber shop au 265 rue des Pyrénées, Paris 20e (métro Gambetta). Dégradés, coupe à la tondeuse, barbe et contours à la lame. Ouvert du mardi au dimanche, 10h30–20h. Réservation en 30 secondes.">
 <meta name="theme-color" content="#08080a">
-<!-- PROTOTYPE : empeche Google d'indexer la maquette.
-     SUPPRIME cette ligne le jour de la vraie mise en ligne. -->
-<meta name="robots" content="noindex, nofollow">
-<!-- Remplace TON-PSEUDO par ton nom d'utilisateur GitHub -->
-<link rel="canonical" href="https://TON-PSEUDO.github.io/the-line-up/">
-<meta property="og:type" content="website">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="The Line Up">
+<meta name="geo.region" content="FR-75">
+<meta name="geo.placename" content="Paris 20e">
+<meta name="geo.position" content="48.8686;2.3987">
+<meta name="ICBM" content="48.8686, 2.3987">
+<link rel="canonical" href="https://nolanjeanbaptiste.github.io/the-line-up/">
+
+<meta property="og:type" content="business.business">
+<meta property="og:site_name" content="The Line Up">
 <meta property="og:title" content="The Line Up — Barber Shop Paris 20e">
-<meta property="og:description" content="Dégradés précis, contours nets. Réserve ton créneau en 30 secondes.">
+<meta property="og:description" content="Dégradés précis, contours nets. 265 rue des Pyrénées, Paris 20e. Réserve ton créneau en 30 secondes.">
 <meta property="og:locale" content="fr_FR">
-<!-- <meta property="og:image" content="https://thelineup.paris/og.jpg"> -->
+<meta property="og:url" content="https://nolanjeanbaptiste.github.io/the-line-up/">
+<meta property="og:image" content="https://nolanjeanbaptiste.github.io/the-line-up/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Line Up — barber shop, Paris 20e">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Line Up — Barber Shop Paris 20e">
+<meta name="twitter:description" content="Dégradés précis, contours nets. Réserve ton créneau en 30 secondes.">
+<meta name="twitter:image" content="https://nolanjeanbaptiste.github.io/the-line-up/og.png">
+
+<link rel="icon" href="./favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<link rel="manifest" href="./site.webmanifest">
 
 <!-- Données structurées : SEO local (Google Business / rich results) -->
 <script type="application/ld+json">
 {
   "@context":"https://schema.org","@type":"HairSalon",
-  "name":"The Line Up","description":"Barber shop à Paris 20e — dégradés, coupes tendance, barbe.",
-  "address":{"@type":"PostalAddress","streetAddress":"265 rue des Pyrénées","addressLocality":"Paris","postalCode":"75020","addressCountry":"FR"},
-  "telephone":"+33100000000","priceRange":"€€","currenciesAccepted":"EUR",
-  "image":"https://thelineup.paris/og.jpg","url":"https://TON-PSEUDO.github.io/the-line-up/",
+  "@id":"https://nolanjeanbaptiste.github.io/the-line-up/#salon",
+  "name":"The Line Up",
+  "description":"Barber shop à Paris 20e — dégradés, coupe à la tondeuse, barbe et contours à la lame.",
+  "address":{"@type":"PostalAddress","streetAddress":"265 rue des Pyrénées","addressLocality":"Paris","addressRegion":"Île-de-France","postalCode":"75020","addressCountry":"FR"},
+  "geo":{"@type":"GeoCoordinates","latitude":48.8686,"longitude":2.3987},
+  "telephone":"+33618594070","priceRange":"€€","currenciesAccepted":"EUR","paymentAccepted":"Espèces, Carte bancaire",
+  "image":"https://nolanjeanbaptiste.github.io/the-line-up/og.png",
+  "logo":"https://nolanjeanbaptiste.github.io/the-line-up/og.png",
+  "url":"https://nolanjeanbaptiste.github.io/the-line-up/",
+  "areaServed":[{"@type":"City","name":"Paris"},{"@type":"AdministrativeArea","name":"Paris 20e"}],
   "openingHoursSpecification":[
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"19:30"},
-    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:30","closes":"20:00"}],
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"10:30","closes":"20:00"}],
   "sameAs":["https://instagram.com/thelineup.paris"],
   "hasOfferCatalog":{"@type":"OfferCatalog","name":"Prestations","itemListElement":[
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Coupe + dégradé"},"price":"25","priceCurrency":"EUR"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Coupe à la tondeuse"},"price":"25","priceCurrency":"EUR"},
     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Coupe + barbe"},"price":"35","priceCurrency":"EUR"},
     {"@type":"Offer","itemOffered":{"@type":"Service","name":"Barbe seule"},"price":"15","priceCurrency":"EUR"}]}
 }
 </script>
 
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "Je peux venir sans rendez-vous ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "On prend les walk-ins quand il y a de la place, mais la réservation en ligne te garantit ton créneau sans attente. C'est gratuit et ça prend 30 secondes."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "J'annule ou je suis en retard, ça se passe comment ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Annulation gratuite jusqu'à 3h avant le rendez-vous, directement depuis le lien de confirmation. Au-delà de 10 minutes de retard, on peut être obligés de décaler ou d'annuler ton créneau."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Vous coupez les cheveux texturés / crépus ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui. Dégradés, crops, contours sur tous types de cheveux — c'est une de nos spécialités."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Je ne sais pas quelle coupe demander.",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Viens avec une photo de référence, ou dis-le simplement : on prend 5 minutes avant chaque coupe pour définir ce qui te va, selon ta forme de visage et ta nature de cheveux."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Vous prenez les mineurs ?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Oui, tarif -16 ans en semaine. En dessous de 12 ans, un accompagnant est demandé."
+   }
+  }
+ ]
+}
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+<!-- Memes polices Google, mais chargement non bloquant : le texte s'affiche
+     tout de suite en police de secours puis bascule (display=swap).
+     Pour revenir au chargement bloquant, remplace les 3 lignes par :
+     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Unbounded:wght@600;800&amp;display=swap" rel="stylesheet"> -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Unbounded:wght@600;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Unbounded:wght@600;800&amp;display=swap" media="print" onload="this.media='all';this.onload=null">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Unbounded:wght@600;800&amp;display=swap"></noscript>
 
 <style>
   html { scroll-behavior: smooth; scroll-padding-top: 90px; }
@@ -65,8 +144,21 @@
   @keyframes stepIn { from{opacity:0; transform:translateY(24px); filter:blur(6px)} to{opacity:1; transform:none; filter:none} }
   @keyframes popIn { from{opacity:0; transform:scale(.6) rotate(-12deg)} to{opacity:1; transform:none} }
 
-  details > summary { list-style:none; cursor:pointer; }
+  /* FAQ : chevron vers le bas pour signaler « clique pour déplier ».
+     Il pivote vers le haut quand la réponse est ouverte. */
+  details > summary { list-style:none; cursor:pointer; display:flex; align-items:center;
+    justify-content:space-between; gap:18px; min-height:44px; }
   details > summary::-webkit-details-marker { display:none; }
+  details > summary::after {
+    content:''; flex:none; width:11px; height:11px; margin-right:3px;
+    border-right:2.5px solid var(--neon,#ff2450);
+    border-bottom:2.5px solid var(--neon,#ff2450);
+    transform:rotate(45deg) translateY(-3px);
+    transition:transform .28s cubic-bezier(.2,.8,.2,1);
+  }
+  details[open] > summary::after { transform:rotate(-135deg) translateY(-3px); }
+  details > summary:hover { color:var(--neon,#ff2450); }
+  details > summary:hover::after { filter:drop-shadow(0 0 6px var(--glow, rgba(255,36,80,.7))); }
 
   /* Effets de survol extraits de la maquette */
 .hv1:hover{color:#f2f0f1;}
@@ -76,26 +168,65 @@
 .hv5:hover{transform:translateY(-6px); box-shadow:0 0 50px var(--glow2, rgba(255,36,80,.4));}
 .hv6:hover{transform:translateY(-6px); border-color:var(--neon,#ff2450); box-shadow:0 0 30px var(--glow2, rgba(255,36,80,.25));}
 .hv7:hover{border-color:var(--neon,#ff2450);}
+/* Créneaux déjà passés : visibles mais inertes, pour que la grille
+   garde sa forme au lieu de se réorganiser en cours de journée. */
+[data-pick="slot"][disabled]{opacity:.28; cursor:not-allowed !important; filter:grayscale(1);}
+[data-pick="slot"][disabled]:hover{border-color:#26232a !important;}
+
+/* ============================================================
+   EMPLACEMENTS PHOTO
+   Dépose simplement les fichiers dans le dossier /photos/ avec
+   les noms indiqués dans photos/README.md : ils apparaissent.
+   Fichier absent = cadre stylé avec son intitulé, jamais d'image
+   cassée. Voir photos/README.md pour la liste et les formats.
+   ============================================================ */
+.ph{position:relative; margin:0; overflow:hidden; border-radius:12px; border:1px solid #26232a;
+    background:repeating-linear-gradient(45deg,#131116,#131116 12px,#16141a 12px,#16141a 24px);
+    transition:border-color .25s, box-shadow .25s, transform .25s;}
+.ph::after{content:attr(data-label); position:absolute; inset:0; display:flex; align-items:center;
+    justify-content:center; padding:12px; text-align:center; font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
+    font-size:12px; letter-spacing:.5px; color:#857f88;}
+.ph img{position:relative; z-index:1; width:100%; height:100%; object-fit:cover; display:block;}
+.ph:hover{border-color:var(--neon,#ff2450); box-shadow:0 0 26px var(--glow2, rgba(255,36,80,.24)); transform:translateY(-3px);}
+.ph-sq{aspect-ratio:1;}
+.ph-por{aspect-ratio:4/5; border:0; border-radius:0;}
+.ph-por:hover{transform:none; box-shadow:none;}
 .hv8:hover{box-shadow:0 0 70px var(--glow, rgba(255,36,80,1)); transform:translateY(-3px);}
 
   /* ============================================================
      RESPONSIVE — la majorité du trafic d'un barber vient du mobile
      ============================================================ */
+  /* Cibles tactiles : 44px minimum partout, pas seulement sur mobile */
+  .main-nav a { display:inline-flex; align-items:center; min-height:44px; padding:0 2px; }
+
   @media (max-width: 900px) {
     /* Hero : le visuel néon passe sous le texte au lieu d'être écrasé */
     .hero-grid { grid-template-columns: 1fr !important; gap: 40px !important; }
     .hero-grid > div:last-child svg { width: 210px !important; height: 250px !important; }
-    /* Nav : les liens de section disparaissent, logo + CTA suffisent */
-    .main-nav { display: none !important; }
     .gallery-grid { grid-template-columns: repeat(2, 1fr) !important; }
+    /* Nav mobile : bande défilable au lieu d'une disparition pure et simple.
+       Les ancres restent atteignables au pouce — et crawlables. */
+    .header-inner { height:auto !important; flex-wrap:wrap !important; padding-block:10px !important; row-gap:4px; }
+    .main-nav {
+      order:3; width:100%; gap:18px !important; overflow-x:auto; scrollbar-width:none;
+      -webkit-overflow-scrolling:touch; padding-bottom:2px;
+      mask-image:linear-gradient(90deg,#000 88%,transparent);
+    }
+    .main-nav::-webkit-scrollbar { display:none; }
+    .main-nav a { white-space:nowrap; min-height:40px; font-size:13px !important; }
+    /* Le header mobile est plus haut (logo + CTA + bande de liens) :
+       on décale le hero pour que le badge ne passe pas dessous. */
+    html { scroll-padding-top: 126px; }
+    #top { padding-top: 160px !important; min-height:auto !important; }
   }
   @media (max-width: 560px) {
-    .header-inner { padding: 0 16px !important; }
+    .header-inner { padding-inline: 16px !important; }
     .gallery-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 10px !important; }
     /* Labels de la barre d'étapes masqués : seuls les numéros restent */
     .step-label { display: none !important; }
     /* Cibles tactiles : minimum 44px de haut (recommandation Apple/WCAG) */
-    #page-reserver button { min-height: 48px; }
+    #page-reserver button, #page-reserver a[style*="min-height"] { min-height: 48px; }
+    h1 { font-size: clamp(2.1rem, 10vw, 3rem) !important; }
   }
 
   /* Respect de la préférence « réduire les animations » */
@@ -110,7 +241,7 @@
 <!-- ============================================================
      VUE 1 — SITE VITRINE
      ============================================================ -->
-<div id="page-site">
+<main id="page-site">
 
 <div style="background:#08080a; overflow-x:hidden;">
 
@@ -118,11 +249,16 @@
   <header style="position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(8,8,10,.8); backdrop-filter:blur(14px); border-bottom:1px solid rgba(255,36,80,.18);">
     <div class="header-inner" style="max-width:1200px; margin:0 auto; padding:0 24px; height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
       <a href="#top" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
-        <svg width="30" height="36" viewBox="0 0 100 110" fill="none" style="filter:drop-shadow(0 0 6px var(--glow, rgba(255,36,80,.6)));">
-          <rect x="32" y="6" width="36" height="32" rx="10" stroke="var(--neon,#ff2450)" stroke-width="6" fill="none"></rect>
-          <rect x="24" y="44" width="52" height="12" rx="6" stroke="var(--neon,#ff2450)" stroke-width="6" fill="none"></rect>
-          <line x1="50" y1="58" x2="50" y2="86" stroke="var(--neon,#ff2450)" stroke-width="6" stroke-linecap="round"></line>
-          <path d="M26 96 Q50 106 74 96" stroke="var(--neon,#ff2450)" stroke-width="6" stroke-linecap="round" fill="none"></path>
+        <svg width="30" height="36" viewBox="0 0 100 120" fill="none" role="img" aria-label="Fauteuil de barbier" style="filter:drop-shadow(0 0 6px var(--glow, rgba(255,36,80,.6)));">
+          <g stroke="var(--neon,#ff2450)" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="42" y="4" width="16" height="12" rx="5"></rect>
+            <rect x="29" y="20" width="42" height="30" rx="9"></rect>
+            <rect x="15" y="54" width="18" height="7" rx="3.5"></rect>
+            <rect x="67" y="54" width="18" height="7" rx="3.5"></rect>
+            <rect x="27" y="53" width="46" height="13" rx="5"></rect>
+            <line x1="50" y1="66" x2="50" y2="106"></line>
+            <path d="M22 112 Q50 100 78 112"></path>
+          </g>
         </svg>
         <span style="font-family:'Unbounded'; font-weight:800; font-size:15px; letter-spacing:2px; text-transform:uppercase; color:#f2f0f1;">The <span style="color:var(--neon,#ff2450); text-shadow:0 0 12px var(--glow, rgba(255,36,80,.6));">Line Up</span></span>
       </a>
@@ -145,7 +281,7 @@
       <div>
         <p style="margin:0 0 20px; display:inline-flex; align-items:center; gap:10px; border:1px solid var(--neon,#ff2450); color:var(--neon,#ff2450); font-size:12px; letter-spacing:3px; text-transform:uppercase; padding:8px 16px; border-radius:100px; box-shadow:0 0 16px var(--glow2, rgba(255,36,80,.25)), inset 0 0 12px var(--glow2, rgba(255,36,80,.15));">
           <span style="width:8px; height:8px; border-radius:50%; background:var(--neon,#ff2450); box-shadow:0 0 10px var(--neon,#ff2450); animation:pulseGlow 1.6s infinite;"></span>
-          Ouverture 2026 — Paris 20e
+          Ouvert — 265 rue des Pyrénées, Paris 20e
         </p>
         <h1 style="margin:0 0 24px; font-family:'Unbounded'; font-weight:800; font-size:clamp(2.6rem, 5.5vw, 4.6rem); line-height:1.02; text-transform:uppercase; letter-spacing:-1px;">
           Ta coupe.<br>Ton style.<br>
@@ -158,23 +294,26 @@
         </div>
         <div style="margin-top:48px; display:flex; gap:32px; flex-wrap:wrap; color:#9a969a; font-size:14px;">
           <div><strong style="color:#f2f0f1; font-family:'Unbounded'; font-size:16px;">Paris 20e</strong><br>265 rue des Pyrénées</div>
-          <div><strong style="color:#f2f0f1; font-family:'Unbounded'; font-size:16px;">Mar – Sam</strong><br>10h – 19h30</div>
+          <div><strong style="color:#f2f0f1; font-family:'Unbounded'; font-size:16px;">Mar – Dim</strong><br>10h30 – 20h</div>
           <div><strong style="color:#f2f0f1; font-family:'Unbounded'; font-size:16px;">30 sec</strong><br>pour réserver en ligne</div>
         </div>
       </div>
       <!-- NEON CHAIR SIGN -->
       <div style="display:flex; justify-content:center; animation:floatY 7s ease-in-out infinite;">
         <div style="position:relative; padding:48px 56px; border:1px solid rgba(255,36,80,.25); border-radius:20px; background:rgba(255,36,80,.03); box-shadow:0 0 60px var(--glow2, rgba(255,36,80,.2)), inset 0 0 40px rgba(255,36,80,.05);">
-          <svg width="300" height="360" viewBox="0 0 100 120" fill="none" style="display:block; filter:drop-shadow(0 0 8px var(--glow, rgba(255,36,80,.8))) drop-shadow(0 0 28px var(--glow2, rgba(255,36,80,.45))); animation:var(--flick-anim, flicker 7s infinite);">
-            <rect x="32" y="4" width="36" height="34" rx="11" stroke="var(--neon,#ff2450)" stroke-width="3.5" fill="none" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw 1.2s ease .1s forwards;"></rect>
-            <line x1="21" y1="40" x2="21" y2="54" stroke="var(--neon,#ff2450)" stroke-width="3.5" stroke-linecap="round" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .5s ease .9s forwards;"></line>
-            <line x1="79" y1="40" x2="79" y2="54" stroke="var(--neon,#ff2450)" stroke-width="3.5" stroke-linecap="round" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .5s ease .9s forwards;"></line>
-            <rect x="27" y="44" width="46" height="13" rx="6.5" stroke="var(--neon,#ff2450)" stroke-width="3.5" fill="none" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw 1s ease 1.1s forwards;"></rect>
-            <line x1="50" y1="57" x2="50" y2="88" stroke="var(--neon,#ff2450)" stroke-width="3.5" stroke-linecap="round" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .7s ease 1.8s forwards;"></line>
-            <line x1="50" y1="70" x2="67" y2="79" stroke="var(--neon,#ff2450)" stroke-width="3.5" stroke-linecap="round" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .5s ease 2.2s forwards;"></line>
-            <line x1="42" y1="66" x2="30" y2="78" stroke="var(--neon,#ff2450)" stroke-width="3.5" stroke-linecap="round" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .5s ease 2.2s forwards;"></line>
-            <path d="M22 98 Q50 110 78 98" stroke="var(--neon,#ff2450)" stroke-width="3.5" stroke-linecap="round" fill="none" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .8s ease 2.5s forwards;"></path>
-          </svg>
+          <svg width="300" height="360" viewBox="0 0 100 120" fill="none" role="img" aria-label="Fauteuil de barbier en enseigne néon" style="display:block; max-width:100%; height:auto; filter:drop-shadow(0 0 8px var(--glow, rgba(255,36,80,.8))) drop-shadow(0 0 28px var(--glow2, rgba(255,36,80,.45))); animation:var(--flick-anim, flicker 7s infinite);">
+          <g stroke="var(--neon,#ff2450)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="42" y="4" width="16" height="12" rx="5" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .5s ease .1s forwards;"></rect>
+            <rect x="29" y="20" width="42" height="30" rx="9" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .6s ease .35s forwards;"></rect>
+            <rect x="15" y="54" width="18" height="7" rx="3.5" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .35s ease .8s forwards;"></rect>
+            <rect x="67" y="54" width="18" height="7" rx="3.5" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .35s ease .8s forwards;"></rect>
+            <rect x="27" y="53" width="46" height="13" rx="5" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .5s ease .95s forwards;"></rect>
+            <line x1="50" y1="66" x2="50" y2="106" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .4s ease 1.3s forwards;"></line>
+            <rect x="44" y="71" width="12" height="10" rx="2.5" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .3s ease 1.5s forwards;"></rect>
+            <rect x="36" y="90" width="28" height="6" rx="3" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .3s ease 1.65s forwards;"></rect>
+            <path d="M22 112 Q50 100 78 112" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .45s ease 1.85s forwards;"></path>
+          </g>
+        </svg>
           <p style="margin:20px 0 0; text-align:center; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:6px; text-transform:uppercase; color:var(--neon,#ff2450); text-shadow:0 0 12px var(--glow, rgba(255,36,80,.7)); animation:var(--flick-anim, flicker 9s infinite);">Take a seat</p>
         </div>
       </div>
@@ -205,7 +344,7 @@
         <div data-reveal="" style="position:relative; background:linear-gradient(160deg, rgba(255,36,80,.1), rgba(255,36,80,.02)); border:1px solid var(--neon,#ff2450); border-radius:12px; padding:32px; box-shadow:0 0 30px var(--glow2, rgba(255,36,80,.2)); transition:transform .25s, box-shadow .25s;" class="hv5">
           <span style="position:absolute; top:-12px; left:24px; background:var(--neon,#ff2450); color:#08080a; font-family:'Unbounded'; font-weight:600; font-size:10px; letter-spacing:2px; text-transform:uppercase; padding:5px 14px; border-radius:100px; box-shadow:0 0 16px var(--glow, rgba(255,36,80,.6));">Le plus demandé</span>
           <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:6px;">
-            <h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:18px;">Coupe + dégradé</h3>
+            <h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:18px;">Coupe à la tondeuse</h3>
             <span style="font-family:'Unbounded'; font-weight:800; font-size:28px; color:var(--neon,#ff2450); text-shadow:0 0 14px var(--glow, rgba(255,36,80,.6));">25€</span>
           </div>
           <p style="margin:0 0 12px; color:#9a969a; font-size:13px; letter-spacing:1px;">45 MIN</p>
@@ -267,14 +406,14 @@
         <a href="https://instagram.com/thelineup.paris" target="_blank" rel="noopener" style="text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#f2f0f1; border:1px solid rgba(242,240,241,.3); padding:14px 26px; border-radius:4px; transition:border-color .2s, box-shadow .2s; white-space:nowrap;" class="hv4">@thelineup.paris ↗</a>
       </div>
       <div class="gallery-grid" style="display:grid; grid-template-columns:repeat(4, 1fr); gap:14px;">
-        <div data-reveal="" style="aspect-ratio:1; border-radius:12px; border:1px solid #26232a; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px; text-align:center; padding:12px; transition:border-color .25s;" class="hv7">photo — dégradé bas</div>
-        <div data-reveal="" style="aspect-ratio:1; border-radius:12px; border:1px solid #26232a; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px; text-align:center; padding:12px; transition:border-color .25s;" class="hv7">photo — skin fade</div>
-        <div data-reveal="" style="aspect-ratio:1; border-radius:12px; border:1px solid #26232a; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px; text-align:center; padding:12px; transition:border-color .25s;" class="hv7">photo — coupe + barbe</div>
-        <div data-reveal="" style="aspect-ratio:1; border-radius:12px; border:1px solid #26232a; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px; text-align:center; padding:12px; transition:border-color .25s;" class="hv7">photo — design traits</div>
-        <div data-reveal="" style="aspect-ratio:1; border-radius:12px; border:1px solid #26232a; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px; text-align:center; padding:12px; transition:border-color .25s;" class="hv7">photo — avant / après</div>
-        <div data-reveal="" style="aspect-ratio:1; border-radius:12px; border:1px solid #26232a; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px; text-align:center; padding:12px; transition:border-color .25s;" class="hv7">photo — mid fade</div>
-        <div data-reveal="" style="aspect-ratio:1; border-radius:12px; border:1px solid #26232a; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px; text-align:center; padding:12px; transition:border-color .25s;" class="hv7">photo — crop texturé</div>
-        <div data-reveal="" style="aspect-ratio:1; border-radius:12px; border:1px solid #26232a; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px; text-align:center; padding:12px; transition:border-color .25s;" class="hv7">photo — contours lame</div>
+        <figure data-reveal="" class="ph ph-sq" data-label="dégradé bas"><img src="./photos/degrade-bas.jpg" alt="Dégradé bas réalisé chez The Line Up, barber shop Paris 20e" loading="lazy" decoding="async" width="600" height="600" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
+        <figure data-reveal="" class="ph ph-sq" data-label="skin fade"><img src="./photos/skin-fade.jpg" alt="Skin fade réalisé chez The Line Up, barber shop Paris 20e" loading="lazy" decoding="async" width="600" height="600" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
+        <figure data-reveal="" class="ph ph-sq" data-label="coupe + barbe"><img src="./photos/coupe-barbe.jpg" alt="Coupe et taille de barbe chez The Line Up, Paris 20e" loading="lazy" decoding="async" width="600" height="600" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
+        <figure data-reveal="" class="ph ph-sq" data-label="design traits"><img src="./photos/design-traits.jpg" alt="Design et traits à la lame chez The Line Up, Paris 20e" loading="lazy" decoding="async" width="600" height="600" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
+        <figure data-reveal="" class="ph ph-sq" data-label="avant / après"><img src="./photos/avant-apres.jpg" alt="Avant / après d'une coupe chez The Line Up, Paris 20e" loading="lazy" decoding="async" width="600" height="600" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
+        <figure data-reveal="" class="ph ph-sq" data-label="mid fade"><img src="./photos/mid-fade.jpg" alt="Mid fade réalisé chez The Line Up, barber shop Paris 20e" loading="lazy" decoding="async" width="600" height="600" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
+        <figure data-reveal="" class="ph ph-sq" data-label="crop texturé"><img src="./photos/crop-texture.jpg" alt="Crop texturé réalisé chez The Line Up, Paris 20e" loading="lazy" decoding="async" width="600" height="600" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
+        <figure data-reveal="" class="ph ph-sq" data-label="contours lame"><img src="./photos/contours-lame.jpg" alt="Contours à la lame chez The Line Up, barber shop Paris 20e" loading="lazy" decoding="async" width="600" height="600" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
       </div>
     </div>
   </section>
@@ -289,27 +428,27 @@
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;">
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; overflow:hidden; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
-          <div style="aspect-ratio:4/5; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px;">photo — barbier 1</div>
+          <figure class="ph ph-por" data-label="portrait — Sofiane"><img src="./photos/barbier-sofiane.jpg" alt="Sofiane, barbier chez The Line Up — spécialiste skin fade et designs" loading="lazy" decoding="async" width="640" height="800" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
           <div style="padding:24px;">
-            <h3 style="margin:0 0 4px; font-family:'Unbounded'; font-weight:600; font-size:17px;">Prénom</h3>
+            <h3 style="margin:0 0 4px; font-family:'Unbounded'; font-weight:600; font-size:17px;">Sofiane</h3>
             <p style="margin:0 0 8px; color:var(--neon,#ff2450); font-size:13px; letter-spacing:1px; text-transform:uppercase;">Skin fade &amp; designs</p>
             <p style="margin:0 0 16px; color:#9a969a; font-size:14px; line-height:1.6;">Fondateur. 8 ans de lame, obsédé par les contours nets.</p>
             <a href="#reserver" data-barbier="1" style="font-size:14px; font-weight:700; color:#f2f0f1; text-decoration:none; border-bottom:1px solid var(--neon,#ff2450); padding-bottom:2px;">Réserver avec lui →</a>
           </div>
         </div>
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; overflow:hidden; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
-          <div style="aspect-ratio:4/5; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px;">photo — barbier 2</div>
+          <figure class="ph ph-por" data-label="portrait — Karim"><img src="./photos/barbier-karim.jpg" alt="Karim, barbier chez The Line Up — spécialiste barbe et cheveux texturés" loading="lazy" decoding="async" width="640" height="800" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
           <div style="padding:24px;">
-            <h3 style="margin:0 0 4px; font-family:'Unbounded'; font-weight:600; font-size:17px;">Prénom</h3>
+            <h3 style="margin:0 0 4px; font-family:'Unbounded'; font-weight:600; font-size:17px;">Karim</h3>
             <p style="margin:0 0 8px; color:var(--neon,#ff2450); font-size:13px; letter-spacing:1px; text-transform:uppercase;">Barbe &amp; cheveux texturés</p>
             <p style="margin:0 0 16px; color:#9a969a; font-size:14px; line-height:1.6;">Le spécialiste barbe. Serviette chaude, rasage traditionnel.</p>
             <a href="#reserver" data-barbier="2" style="font-size:14px; font-weight:700; color:#f2f0f1; text-decoration:none; border-bottom:1px solid var(--neon,#ff2450); padding-bottom:2px;">Réserver avec lui →</a>
           </div>
         </div>
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; overflow:hidden; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
-          <div style="aspect-ratio:4/5; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:12px;">photo — barbier 3</div>
+          <figure class="ph ph-por" data-label="portrait — Théo"><img src="./photos/barbier-theo.jpg" alt="Théo, barbier chez The Line Up — coupes tendance et crop texturé" loading="lazy" decoding="async" width="640" height="800" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
           <div style="padding:24px;">
-            <h3 style="margin:0 0 4px; font-family:'Unbounded'; font-weight:600; font-size:17px;">Prénom</h3>
+            <h3 style="margin:0 0 4px; font-family:'Unbounded'; font-weight:600; font-size:17px;">Théo</h3>
             <p style="margin:0 0 8px; color:var(--neon,#ff2450); font-size:13px; letter-spacing:1px; text-transform:uppercase;">Coupes tendance &amp; crop</p>
             <p style="margin:0 0 16px; color:#9a969a; font-size:14px; line-height:1.6;">Toujours à jour sur les tendances. Conseils personnalisés.</p>
             <a href="#reserver" data-barbier="3" style="font-size:14px; font-weight:700; color:#f2f0f1; text-decoration:none; border-bottom:1px solid var(--neon,#ff2450); padding-bottom:2px;">Réserver avec lui →</a>
@@ -337,9 +476,8 @@
           <h3 style="margin:0 0 14px; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--neon,#ff2450);">Horaires</h3>
           <div style="display:grid; gap:6px; color:#9a969a; font-size:14px;">
             <div style="display:flex; justify-content:space-between; border-bottom:1px dashed #26232a; padding-bottom:6px;"><span>Lundi</span><span>Fermé</span></div>
-            <div style="display:flex; justify-content:space-between; border-bottom:1px dashed #26232a; padding-bottom:6px;"><span>Mar – Ven</span><span style="color:#f2f0f1;">10h – 19h30</span></div>
-            <div style="display:flex; justify-content:space-between; border-bottom:1px dashed #26232a; padding-bottom:6px;"><span>Samedi</span><span style="color:#f2f0f1;">9h30 – 20h</span></div>
-            <div style="display:flex; justify-content:space-between;"><span>Dimanche</span><span>Fermé</span></div>
+            <div style="display:flex; justify-content:space-between; border-bottom:1px dashed #26232a; padding-bottom:6px;"><span>Mar – Sam</span><span style="color:#f2f0f1;">10h30 – 20h</span></div>
+            <div style="display:flex; justify-content:space-between;"><span>Dimanche</span><span style="color:#f2f0f1;">10h30 – 20h</span></div>
           </div>
         </div>
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px;">
@@ -354,7 +492,20 @@
           <p style="margin:0; color:#9a969a; font-size:14px;">Cartes cadeaux disponibles au salon.</p>
         </div>
       </div>
-      <div data-reveal="" style="margin-top:20px; height:280px; border:1px solid #26232a; border-radius:12px; background:repeating-linear-gradient(45deg, #131116, #131116 12px, #16141a 12px, #16141a 24px); display:flex; align-items:center; justify-content:center; color:#6a666d; font-family:monospace; font-size:13px;">iframe Google Maps du salon</div>
+      <!-- Carte Google Maps du salon. `output=embed` ne demande aucune clé API.
+           Chargement différé : la carte ne pèse rien tant qu'on n'a pas scrollé jusqu'ici. -->
+      <div data-reveal="" style="margin-top:20px; position:relative; border:1px solid #26232a; border-radius:12px; overflow:hidden; background:#131116;">
+        <iframe
+          title="Plan d'accès — The Line Up, 265 rue des Pyrénées, 75020 Paris"
+          src="https://www.google.com/maps?q=265%20rue%20des%20Pyr%C3%A9n%C3%A9es%2C%2075020%20Paris&amp;hl=fr&amp;z=16&amp;output=embed"
+          width="100%" height="320" style="display:block; border:0; background:#131116; filter:invert(92%) hue-rotate(180deg) contrast(88%) saturate(75%);"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen></iframe>
+        <a href="https://maps.google.com/?q=265+rue+des+Pyr%C3%A9n%C3%A9es+75020+Paris" target="_blank" rel="noopener"
+           style="position:absolute; right:14px; bottom:14px; display:inline-flex; align-items:center; gap:8px; min-height:44px; text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:var(--neon,#ff2450); padding:0 18px; border-radius:6px; box-shadow:0 0 24px var(--glow, rgba(255,36,80,.5));">
+          Itinéraire →
+        </a>
+      </div>
     </div>
   </section>
 
@@ -410,7 +561,7 @@
   </footer>
 
 </div>
-</div>
+</main>
 
 <!-- ============================================================
      VUE 2 — TUNNEL DE RÉSERVATION
@@ -423,11 +574,16 @@
     <!-- HEADER RÉSERVATION -->
     <header style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:28px 24px 0; display:flex; align-items:center; justify-content:space-between; gap:16px;">
       <a href="#top" data-goto="site" style="display:flex; align-items:center; gap:12px; text-decoration:none;" aria-label="The Line Up — retour à l'accueil">
-        <svg width="26" height="32" viewBox="0 0 100 110" fill="none" style="filter:drop-shadow(0 0 6px rgba(255,36,80,.6));" aria-hidden="true">
-          <rect x="32" y="6" width="36" height="32" rx="10" stroke="#ff2450" stroke-width="6" fill="none"></rect>
-          <rect x="24" y="44" width="52" height="12" rx="6" stroke="#ff2450" stroke-width="6" fill="none"></rect>
-          <line x1="50" y1="58" x2="50" y2="86" stroke="#ff2450" stroke-width="6" stroke-linecap="round"></line>
-          <path d="M26 96 Q50 106 74 96" stroke="#ff2450" stroke-width="6" stroke-linecap="round" fill="none"></path>
+        <svg width="26" height="32" viewBox="0 0 100 120" fill="none" style="filter:drop-shadow(0 0 6px rgba(255,36,80,.6));" aria-hidden="true">
+          <g stroke="#ff2450" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="42" y="4" width="16" height="12" rx="5"></rect>
+            <rect x="29" y="20" width="42" height="30" rx="9"></rect>
+            <rect x="15" y="54" width="18" height="7" rx="3.5"></rect>
+            <rect x="67" y="54" width="18" height="7" rx="3.5"></rect>
+            <rect x="27" y="53" width="46" height="13" rx="5"></rect>
+            <line x1="50" y1="66" x2="50" y2="106"></line>
+            <path d="M22 112 Q50 100 78 112"></path>
+          </g>
         </svg>
         <span style="font-family:'Unbounded'; font-weight:800; font-size:13px; letter-spacing:2px; text-transform:uppercase;">The <span style="color:#ff2450; text-shadow:0 0 12px rgba(255,36,80,.6);">Line Up</span></span>
       </a>
@@ -456,7 +612,7 @@
    Modifier SERVICES / BARBERS / TIMES / CLOSED_DAYS ci-dessous.
    ============================================================ */
 const SERVICES = [
-  { id:1, name:'Coupe + dégradé',     duration:'45 min', desc:'contours lame, coiffage',    price:'25€' },
+  { id:1, name:'Coupe à la tondeuse', duration:'45 min', desc:'dégradé, contours lame, coiffage', price:'25€' },
   { id:2, name:'Coupe + barbe',       duration:'1 h',    desc:'combo complet, serviette chaude', price:'35€' },
   { id:3, name:'Barbe seule',         duration:'25 min', desc:'taille, structuration, huile',    price:'15€' },
   { id:4, name:'Contours / retouche', duration:'15 min', desc:'entre deux coupes',          price:'10€' },
@@ -471,17 +627,46 @@ const BARBERS = [
 ];
 const DOW = ['Dim','Lun','Mar','Mer','Jeu','Ven','Sam'];
 const MON = ['jan','fév','mar','avr','mai','jun','jul','aoû','sep','oct','nov','déc'];
-const TIMES = ['10:00','10:45','11:30','12:15','14:00','14:45','15:30','16:15','17:00','17:45','18:30','19:15'];
-const CLOSED_DAYS = [0, 1];   // 0 = dimanche, 1 = lundi
+const TIMES = ['10:30','11:15','12:00','12:45','14:00','14:45','15:30','16:15','17:00','17:45','18:30','19:15'];
+const CLOSED_DAYS = [1];      // 1 = lundi (seul jour de fermeture)
+
+/* ------------------------------------------------------------
+   PLANITY — BRANCHEMENT EN UNE LIGNE
+   Colle ici l'URL Planity du salon, par exemple :
+   const PLANITY_URL = 'https://www.planity.com/the-line-up-75020-paris';
+
+   Tant que cette chaîne est VIDE :
+     → l'étape 5 affiche une demande à confirmer par téléphone / WhatsApp
+       (honnête : aucune réservation n'est réellement enregistrée).
+   Dès qu'elle est REMPLIE :
+     → l'étape 5 devient un bouton « Confirmer sur Planity » qui ouvre
+       la page du salon. Rien d'autre à modifier dans le fichier.
+   ------------------------------------------------------------ */
+const PLANITY_URL = '';
 const DAYS_AHEAD = 6;         // nombre de jours proposés
 
 const S = { step:1, service:null, barber:null, dayIdx:null, slot:null, name:'', phone:'', email:'' };
 
+/* Minutes ecoulees depuis minuit, pour un creneau "HH:MM". */
+function slotMinutes(t) { const [h, m] = t.split(':').map(Number); return h * 60 + m; }
+
+/* Un creneau est passe s'il concerne aujourd'hui et que l'heure est derriere nous.
+   15 min de marge : on ne propose pas un rendez-vous dans 3 minutes. */
+function slotPasse(dayIdx, t) {
+  const d = DAYS[dayIdx]; if (!d) return false;
+  const now = new Date();
+  if (d.date.toDateString() !== now.toDateString()) return false;
+  return slotMinutes(t) <= now.getHours() * 60 + now.getMinutes() + 15;
+}
+
 function buildDays() {
   const out = [], now = new Date();
+  const dernier = slotMinutes(TIMES[TIMES.length - 1]);
   for (let i = 0; out.length < DAYS_AHEAD && i < 21; i++) {
     const d = new Date(now); d.setDate(now.getDate() + i);
     if (CLOSED_DAYS.includes(d.getDay())) continue;
+    /* Aujourd'hui n'est propose que s'il reste au moins un creneau devant nous. */
+    if (i === 0 && now.getHours() * 60 + now.getMinutes() + 15 >= dernier) continue;
     out.push({ date:d, dow:DOW[d.getDay()], dnum:d.getDate(), mon:MON[d.getMonth()] });
   }
   return out;
@@ -562,8 +747,8 @@ function renderPanel() {
         </button>`; }).join('')}
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(84px,1fr)); gap:10px;">
-      ${TIMES.map(t => { const c = N(S.slot === t); return `
-        <button class="hv7" data-pick="slot" data-id="${t}" aria-pressed="${S.slot===t}" style="cursor:pointer; background:${c.bg}; border:1.5px solid ${c.brd}; border-radius:10px; padding:12px 0; font-family:'Unbounded'; font-weight:600; font-size:14px; color:${c.fg}; box-shadow:${c.glow}; transition:all .2s;">${t}</button>`; }).join('')}
+      ${TIMES.map(t => { const c = N(S.slot === t); const off = slotPasse(S.dayIdx, t); return `
+        <button class="hv7" data-pick="slot" data-id="${t}" ${off ? 'disabled aria-disabled="true" title="Créneau déjà passé"' : ''} aria-pressed="${S.slot===t}" style="cursor:pointer; background:${c.bg}; border:1.5px solid ${c.brd}; border-radius:10px; padding:12px 0; font-family:'Unbounded'; font-weight:600; font-size:14px; color:${c.fg}; box-shadow:${c.glow}; transition:all .2s;">${t}</button>`; }).join('')}
       </div></div>`;
   }
   if (S.step === 4) {
@@ -587,14 +772,42 @@ function renderPanel() {
       </div></div>`;
   }
   // Étape 5 — confirmation
+  const btnPrimary = "display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:52px; text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:#ff2450; padding:16px 30px; border-radius:6px; box-shadow:0 0 30px rgba(255,36,80,.45);";
+
+  /* Rendez-vous pris. Si PLANITY_URL est renseigné, un bouton permet
+     d'ouvrir l'agenda officiel du salon pour finaliser. */
+  const actions = PLANITY_URL
+    ? `<div style="display:flex; justify-content:center; margin-bottom:22px;">
+         <a href="${PLANITY_URL}" target="_blank" rel="noopener" style="${btnPrimary}">Voir sur Planity</a>
+       </div>`
+    : '';
+
+  /* ------------------------------------------------------------
+     MENTION DÉMO — supprime les 4 lignes ci-dessous le jour où
+     PLANITY_URL est renseigné (elle disparaît d'elle-même de toute
+     façon, la condition ci-dessus s'en charge).
+     ------------------------------------------------------------ */
+  const demo = PLANITY_URL ? '' :
+    `<p style="margin:0 0 22px; display:inline-block; border:1px solid #26232a; border-radius:100px; padding:7px 15px; color:#857f88; font-size:11px; letter-spacing:2px; text-transform:uppercase;">Démo — agenda Planity à brancher</p>`;
+
   return `<div style="text-align:center; padding:20px 0;">
     <div style="width:88px; height:88px; margin:0 auto 24px; border-radius:50%; border:2px solid #ff2450; display:flex; align-items:center; justify-content:center; box-shadow:0 0 40px rgba(255,36,80,.5); animation:popIn .5s cubic-bezier(.2,.8,.2,1);">
       <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 L10 18 L20 6" stroke="#ff2450" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
     </div>
-    <h2 style="margin:0 0 10px; font-family:'Unbounded'; font-weight:800; font-size:24px; text-transform:uppercase;">C'est réservé <span style="color:#ff2450;">✦</span></h2>
-    <p style="margin:0 0 6px; color:#f2f0f1; font-size:16px;">${sumService()} · ${sumWhen()}</p>
-    <p style="margin:0 0 28px; color:#9a969a; font-size:14px;">avec ${sumBarber()} — on t'envoie la confirmation. À très vite chez The Line Up !</p>
-    <a href="#top" data-goto="site" style="display:inline-block; text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:#f2f0f1; border:1px solid rgba(242,240,241,.3); padding:16px 32px; border-radius:6px;">Retour au site</a>
+    <h2 style="margin:0 0 10px; font-family:'Unbounded'; font-weight:800; font-size:24px; text-transform:uppercase;">C'est réservé <span style="color:#ff2450;">&#10022;</span></h2>
+    <p style="margin:0 0 6px; color:#f2f0f1; font-size:16px;">${sumService()} &middot; ${sumWhen()}</p>
+    <p style="margin:0 0 22px; color:#9a969a; font-size:14px;">avec ${sumBarber()} &mdash; &agrave; tr&egrave;s vite chez The Line Up.</p>
+    ${demo}
+    <div style="background:#0c0b0e; border:1px solid #26232a; border-radius:12px; padding:20px 22px; text-align:left; max-width:420px; margin:0 auto 28px;">
+      <div style="display:grid; gap:9px; font-size:14px;">
+        <div style="display:flex; justify-content:space-between; gap:16px;"><span style="color:#9a969a;">Prestation</span><span style="text-align:right;">${sumService()}</span></div>
+        <div style="display:flex; justify-content:space-between; gap:16px;"><span style="color:#9a969a;">Barbier</span><span style="text-align:right;">${sumBarber()}</span></div>
+        <div style="display:flex; justify-content:space-between; gap:16px;"><span style="color:#9a969a;">Date &amp; heure</span><span style="text-align:right;">${sumWhen()}</span></div>
+        <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px dashed #26232a; padding-top:9px; margin-top:4px;"><span style="color:#9a969a;">Total</span><span style="font-family:'Unbounded'; font-weight:800; color:#ff2450;">${sumPrice()}</span></div>
+      </div>
+    </div>
+    ${actions}
+    <div><a href="#top" data-goto="site" style="color:#9a969a; font-size:13px;">Retour au site</a></div>
   </div>`;
 }
 
@@ -656,31 +869,43 @@ document.addEventListener('input', e => {
   }
 });
 
-/* PROD : remplacer par l'appel réel (fetch vers backend, webhook Make/Zapier,
-   ou redirection vers Planity/Booksy). Ici : simple log. */
+/* Fin du tunnel. Voir PLANITY_URL en haut du bloc de configuration :
+   tant qu'il est vide, on n'invente aucune confirmation — l'étape 5
+   renvoie vers le téléphone / WhatsApp du salon. */
 function submitBooking() {
-  console.log('Réservation :', {
+  const data = {
     service: sumService(), barber: sumBarber(), when: sumWhen(),
     price: sumPrice(), name: S.name, phone: S.phone, email: S.email
-  });
+  };
+  /* Point d'accroche si tu ajoutes un jour un webhook / une notification :
+     c'est ici que `data` est disponible en entier. */
+  return data;
 }
 
 /* ============================================================
    ROUTEUR — une seule page, deux vues. Le bouton « précédent »
    du navigateur fonctionne grâce au hash.
    ============================================================ */
+function currentPage() {
+  return document.getElementById('page-reserver').hidden ? 'site' : 'reserver';
+}
+
 function showPage(name, push) {
   const site = document.getElementById('page-site');
   const book = document.getElementById('page-reserver');
   const isBook = name === 'reserver';
+  const changed = currentPage() !== name;
   site.hidden = isBook;
   book.hidden = !isBook;
   document.title = isBook
     ? 'Réserver un créneau — The Line Up | Barber Shop Paris 20e'
-    : 'The Line Up — Barber Shop Paris 20e | Coupe, Dégradé, Barbe';
+    : 'The Line Up — Barber Shop Paris 20e | Coupe à la tondeuse, Dégradé, Barbe';
   if (isBook) { DAYS = buildDays(); renderBooking(false); }
   if (push) history.pushState({ page:name }, '', isBook ? '#reserver' : '#top');
-  window.scrollTo({ top:0, behavior:'instant' in window ? 'instant' : 'auto' });
+  /* On ne remonte en haut QUE si la vue change réellement.
+     Sinon un clic sur #tarifs / #equipe / #faq déclenchait un hashchange
+     qui rappelait showPage() et annulait le saut vers la section. */
+  if (changed) window.scrollTo({ top:0, behavior:'auto' });
 }
 
 // Clics sur les liens de navigation entre vues
@@ -694,7 +919,17 @@ document.addEventListener('click', e => {
 
 // Bouton précédent/suivant du navigateur (popstate + hashchange = couverture totale)
 function syncFromUrl() {
-  showPage(location.hash === '#reserver' ? 'reserver' : 'site', false);
+  const h = location.hash;
+  const isBook = h === '#reserver';
+  /* Les ancres de section (#tarifs, #equipe, #faq, #infos, #realisations, #top)
+     ne sont pas des changements de vue : on laisse le navigateur faire le saut. */
+  if (!isBook && currentPage() === 'site') return;
+  showPage(isBook ? 'reserver' : 'site', false);
+  /* Retour arrière depuis la réservation vers une ancre de section */
+  if (!isBook && h && h !== '#top') {
+    const el = document.getElementById(h.slice(1));
+    if (el) el.scrollIntoView();
+  }
 }
 window.addEventListener('popstate', syncFromUrl);
 window.addEventListener('hashchange', syncFromUrl);

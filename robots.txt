@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nolanjeanbaptiste.github.io/the-line-up/sitemap.xml
