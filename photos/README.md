@@ -23,9 +23,9 @@ sur le site. Un fichier manquant n'affiche jamais d'image cassée : le cadre sty
 
 | Fichier | Ce qu'on veut voir |
 |---|---|
-| `barbier-sofiane.jpg` | portrait vertical, au salon |
-| `barbier-karim.jpg` | portrait vertical, au salon |
-| `barbier-theo.jpg` | portrait vertical, au salon |
+| `barbier-1.jpg` | portrait vertical, au salon |
+| `barbier-2.jpg` | portrait vertical, au salon |
+| `barbier-3.jpg` | portrait vertical, au salon |
 
 **Format :** vertical, **800 × 1000 px**, JPG qualité 80, moins de 200 Ko par fichier.
 
