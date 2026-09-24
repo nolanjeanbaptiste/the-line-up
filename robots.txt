@@ -1,4 +1,6 @@
+# The Line Up — robots.txt
+# A DEPLOYER TEL QUEL le jour de la mise en ligne sur le vrai domaine.
 User-agent: *
 Allow: /
 
-Sitemap: https://nolanjeanbaptiste.github.io/the-line-up/sitemap.xml
+Sitemap: https://DOMAINE-DU-SALON.fr/sitemap.xml

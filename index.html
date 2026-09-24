@@ -50,18 +50,27 @@
   "description":"Barber shop à Paris 20e — dégradés, coupe à la tondeuse, barbe et contours à la lame.",
   "address":{"@type":"PostalAddress","streetAddress":"265 rue des Pyrénées","addressLocality":"Paris","addressRegion":"Île-de-France","postalCode":"75020","addressCountry":"FR"},
   "geo":{"@type":"GeoCoordinates","latitude":48.8686,"longitude":2.3987},
-  "telephone":"+33618594070","priceRange":"€€","currenciesAccepted":"EUR","paymentAccepted":"Espèces, Carte bancaire",
+  "telephone":"+33698297149","priceRange":"€€","currenciesAccepted":"EUR","paymentAccepted":"Espèces, Carte bancaire",
   "image":"https://nolanjeanbaptiste.github.io/the-line-up/og.png",
   "logo":"https://nolanjeanbaptiste.github.io/the-line-up/og.png",
   "url":"https://nolanjeanbaptiste.github.io/the-line-up/",
   "areaServed":[{"@type":"City","name":"Paris"},{"@type":"AdministrativeArea","name":"Paris 20e"}],
   "openingHoursSpecification":[
     {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"10:30","closes":"20:00"}],
-  "sameAs":["https://instagram.com/thelineup.tlu"],
+  "sameAs":["https://instagram.com/thelineup.tlu","https://www.planity.com/the-line-up-75020-paris"],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","bestRating":"5","reviewCount":"12"},
+  "review":[
+    {"@type":"Review","datePublished":"2026-09-10","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Client Planity"},"reviewBody":"Déco façon vestiaire de foot, ambiance premium et un coiffeur sympa et précis. Coupe, barbe et contours impeccables."},
+    {"@type":"Review","datePublished":"2026-09-06","reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"},"author":{"@type":"Person","name":"Client Planity"},"reviewBody":"Accueil au top, cadre magnifique qui rappelle une ambiance de vestiaire, un vrai sens du détail."}],
+
   "hasOfferCatalog":{"@type":"OfferCatalog","name":"Prestations","itemListElement":[
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Coupe à la tondeuse"},"price":"25","priceCurrency":"EUR"},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Coupe + barbe"},"price":"35","priceCurrency":"EUR"},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Barbe seule"},"price":"15","priceCurrency":"EUR"}]}
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Le coupe tondeuse"},"price":"22","priceCurrency":"EUR"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Le classique"},"price":"25","priceCurrency":"EUR"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Le numéro 10"},"price":"28","priceCurrency":"EUR"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Le match day"},"price":"30","priceCurrency":"EUR"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"L'elite"},"price":"35","priceCurrency":"EUR"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"La barbe seule"},"price":"15","priceCurrency":"EUR"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Academy"},"price":"15","priceCurrency":"EUR"}]}
 }
 </script>
 
@@ -108,7 +117,7 @@
    "name": "Vous prenez les mineurs ?",
    "acceptedAnswer": {
     "@type": "Answer",
-    "text": "Oui, tarif -16 ans en semaine. En dessous de 12 ans, un accompagnant est demandé."
+    "text": "Oui. La prestation Academy est prévue pour les moins de 12 ans, accompagnés d'un adulte."
    }
   }
  ]
@@ -116,31 +125,43 @@
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="dns-prefetch" href="https://www.planity.com">
+<link rel="preconnect" href="https://www.planity.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <!-- Memes polices Google, mais chargement non bloquant : le texte s'affiche
      tout de suite en police de secours puis bascule (display=swap).
      Pour revenir au chargement bloquant, remplace les 3 lignes par :
-     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Unbounded:wght@600;800&amp;display=swap" rel="stylesheet"> -->
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Unbounded:wght@600;800&amp;display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Unbounded:wght@600;800&amp;display=swap" media="print" onload="this.media='all';this.onload=null">
-<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;family=Unbounded:wght@600;800&amp;display=swap"></noscript>
+     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&amp;family=Unbounded:wght@600;800&amp;display=swap" rel="stylesheet"> -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&amp;family=Unbounded:wght@600;800&amp;display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&amp;family=Unbounded:wght@600;800&amp;display=swap" media="print" onload="this.media='all';this.onload=null">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&amp;family=Unbounded:wght@600;800&amp;display=swap"></noscript>
 
 <style>
   html { scroll-behavior: smooth; scroll-padding-top: 90px; }
   body { margin:0; background:#08080a; color:#f2f0f1; font-family:'Space Grotesk', system-ui, sans-serif; }
   a { color:#f2f0f1; }
-  a:hover { color: var(--neon, #ff2450); }
+  a:hover { color: var(--neon, #ff1a1a); }
   button { font-family:'Space Grotesk', system-ui, sans-serif; }
   input { font-family:'Space Grotesk', system-ui, sans-serif; }
-  input:focus, button:focus-visible, a:focus-visible { outline:2px solid #ff2450; outline-offset:2px; }
-  input:focus { border-color:#ff2450 !important; box-shadow:0 0 18px rgba(255,36,80,.3); }
+  input:focus, button:focus-visible, a:focus-visible { outline:2px solid #ff1a1a; outline-offset:2px; }
+  input:focus { border-color:#ff1a1a !important; box-shadow:0 0 18px rgba(255,26,26,.3); }
   input::placeholder { color:#6a666d; }
-  ::selection { background: var(--neon, #ff2450); color:#08080a; }
+  ::selection { background: var(--neon, #ff1a1a); color:#08080a; }
   [hidden] { display:none !important; }
 
   @keyframes draw { to { stroke-dashoffset:0; } }
   @keyframes flicker { 0%,100%{opacity:1} 3%{opacity:.4} 6%{opacity:1} 7%{opacity:.6} 8%{opacity:1} 41%{opacity:1} 42%{opacity:.5} 43%{opacity:1} 71%{opacity:1} 72%{opacity:.7} 73%{opacity:1} }
   @keyframes marquee { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  section[data-section]{content-visibility:auto;contain-intrinsic-size:auto 900px;}
+  .avis-rail,[style*='animation:marquee']{will-change:transform;backface-visibility:hidden;}
+  @keyframes avisScroll { from{transform:translateX(0)} to{transform:translateX(-50%)} }
+  .avis-rail{display:flex;width:max-content;animation:avisScroll 46s linear infinite;}
+  .avis-viewport:hover .avis-rail{animation-play-state:paused;}
+  .avis-card{width:320px;flex:0 0 320px;margin-right:20px;background:#131116;border:1px solid #26232a;border-radius:10px;padding:22px 22px 20px;display:flex;flex-direction:column;gap:12px;}
+  .avis-card:hover{border-color:rgba(255,26,26,.45);}
+  .avis-mask{-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
+  @media (prefers-reduced-motion: reduce){ .avis-rail{animation:none;} .avis-viewport{overflow-x:auto;} }
+  @media (max-width:640px){ .avis-card{width:270px;flex:0 0 270px;} }
   @keyframes pulseGlow { 0%,100%{opacity:.5} 50%{opacity:1} }
   @keyframes floatY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
   @keyframes stepIn { from{opacity:0; transform:translateY(24px); filter:blur(6px)} to{opacity:1; transform:none; filter:none} }
@@ -153,23 +174,23 @@
   details > summary::-webkit-details-marker { display:none; }
   details > summary::after {
     content:''; flex:none; width:11px; height:11px; margin-right:3px;
-    border-right:2.5px solid var(--neon,#ff2450);
-    border-bottom:2.5px solid var(--neon,#ff2450);
+    border-right:2.5px solid var(--neon,#ff1a1a);
+    border-bottom:2.5px solid var(--neon,#ff1a1a);
     transform:rotate(45deg) translateY(-3px);
     transition:transform .28s cubic-bezier(.2,.8,.2,1);
   }
   details[open] > summary::after { transform:rotate(-135deg) translateY(-3px); }
-  details > summary:hover { color:var(--neon,#ff2450); }
-  details > summary:hover::after { filter:drop-shadow(0 0 6px var(--glow, rgba(255,36,80,.7))); }
+  details > summary:hover { color:var(--neon,#ff1a1a); }
+  details > summary:hover::after { filter:drop-shadow(0 0 6px var(--glow, rgba(255,26,26,.7))); }
 
   /* Effets de survol extraits de la maquette */
 .hv1:hover{color:#f2f0f1;}
-.hv2:hover{box-shadow:0 0 36px var(--glow, rgba(255,36,80,.8)); transform:translateY(-2px);}
-.hv3:hover{box-shadow:0 0 50px var(--glow, rgba(255,36,80,.9)); transform:translateY(-3px);}
-.hv4:hover{border-color:var(--neon,#ff2450); box-shadow:0 0 20px var(--glow2, rgba(255,36,80,.3)); color:#f2f0f1;}
-.hv5:hover{transform:translateY(-6px); box-shadow:0 0 50px var(--glow2, rgba(255,36,80,.4));}
-.hv6:hover{transform:translateY(-6px); border-color:var(--neon,#ff2450); box-shadow:0 0 30px var(--glow2, rgba(255,36,80,.25));}
-.hv7:hover{border-color:var(--neon,#ff2450);}
+.hv2:hover{box-shadow:0 0 36px var(--glow, rgba(255,26,26,.8)); transform:translateY(-2px);}
+.hv3:hover{box-shadow:0 0 50px var(--glow, rgba(255,26,26,.9)); transform:translateY(-3px);}
+.hv4:hover{border-color:var(--neon,#ff1a1a); box-shadow:0 0 20px var(--glow2, rgba(255,26,26,.3)); color:#f2f0f1;}
+.hv5:hover{transform:translateY(-6px); box-shadow:0 0 50px var(--glow2, rgba(255,26,26,.4));}
+.hv6:hover{transform:translateY(-6px); border-color:var(--neon,#ff1a1a); box-shadow:0 0 30px var(--glow2, rgba(255,26,26,.25));}
+.hv7:hover{border-color:var(--neon,#ff1a1a);}
 /* Créneaux déjà passés : visibles mais inertes, pour que la grille
    garde sa forme au lieu de se réorganiser en cours de journée. */
 [data-pick="slot"][disabled]{opacity:.28; cursor:not-allowed !important; filter:grayscale(1);}
@@ -189,11 +210,11 @@
     justify-content:center; padding:12px; text-align:center; font-family:ui-monospace,SFMono-Regular,Menlo,monospace;
     font-size:12px; letter-spacing:.5px; color:#857f88;}
 .ph img{position:relative; z-index:1; width:100%; height:100%; object-fit:cover; display:block;}
-.ph:hover{border-color:var(--neon,#ff2450); box-shadow:0 0 26px var(--glow2, rgba(255,36,80,.24)); transform:translateY(-3px);}
+.ph:hover{border-color:var(--neon,#ff1a1a); box-shadow:0 0 26px var(--glow2, rgba(255,26,26,.24)); transform:translateY(-3px);}
 .ph-sq{aspect-ratio:1;}
 .ph-por{aspect-ratio:4/5; border:0; border-radius:0;}
 .ph-por:hover{transform:none; box-shadow:none;}
-.hv8:hover{box-shadow:0 0 70px var(--glow, rgba(255,36,80,1)); transform:translateY(-3px);}
+.hv8:hover{box-shadow:0 0 70px var(--glow, rgba(255,26,26,1)); transform:translateY(-3px);}
 
   /* ============================================================
      RESPONSIVE — la majorité du trafic d'un barber vient du mobile
@@ -248,11 +269,11 @@
 <div style="background:#08080a; overflow-x:hidden;">
 
   <!-- HEADER -->
-  <header style="position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(8,8,10,.8); backdrop-filter:blur(14px); border-bottom:1px solid rgba(255,36,80,.18);">
+  <header style="position:fixed; top:0; left:0; right:0; z-index:100; background:rgba(8,8,10,.8); backdrop-filter:blur(14px); border-bottom:1px solid rgba(255,26,26,.18);">
     <div class="header-inner" style="max-width:1200px; margin:0 auto; padding:0 24px; height:72px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
       <a href="#top" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
-        <svg width="30" height="36" viewBox="0 0 100 120" fill="none" role="img" aria-label="Fauteuil de barbier" style="filter:drop-shadow(0 0 6px var(--glow, rgba(255,36,80,.6)));">
-          <g stroke="var(--neon,#ff2450)" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="30" height="36" viewBox="0 0 100 120" fill="none" role="img" aria-label="Fauteuil de barbier" style="filter:drop-shadow(0 0 6px var(--glow, rgba(255,26,26,.6)));">
+          <g stroke="var(--neon,#ff1a1a)" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <rect x="42" y="4" width="16" height="12" rx="5"></rect>
             <rect x="29" y="20" width="42" height="30" rx="9"></rect>
             <rect x="15" y="54" width="18" height="7" rx="3.5"></rect>
@@ -262,36 +283,38 @@
             <path d="M22 112 Q50 100 78 112"></path>
           </g>
         </svg>
-        <span style="font-family:'Unbounded'; font-weight:800; font-size:15px; letter-spacing:2px; text-transform:uppercase; color:#f2f0f1;">The <span style="color:var(--neon,#ff2450); text-shadow:0 0 12px var(--glow, rgba(255,36,80,.6));">Line Up</span></span>
+        <span style="font-family:'Unbounded'; font-weight:800; font-size:15px; letter-spacing:2px; text-transform:uppercase; color:#f2f0f1;">The <span style="color:var(--neon,#ff1a1a); text-shadow:0 0 12px var(--glow, rgba(255,26,26,.6));">Line Up</span></span>
       </a>
       <nav class="main-nav" style="display:flex; gap:28px; align-items:center;">
         <a href="#tarifs" style="text-decoration:none; font-size:14px; color:#9a969a;" class="hv1">Tarifs</a>
         <a href="#realisations" style="text-decoration:none; font-size:14px; color:#9a969a;" class="hv1">Réalisations</a>
+        <a href="#apropos" style="text-decoration:none; font-size:14px; color:#9a969a;" class="hv1">Le salon</a>
         <a href="#equipe" style="text-decoration:none; font-size:14px; color:#9a969a;" class="hv1">L'équipe</a>
+        <a href="#avis" style="text-decoration:none; font-size:14px; color:#9a969a;" class="hv1">Avis</a>
         <a href="#infos" style="text-decoration:none; font-size:14px; color:#9a969a;" class="hv1">Infos</a>
         <a href="#faq" style="text-decoration:none; font-size:14px; color:#9a969a;" class="hv1">FAQ</a>
       </nav>
-      <a href="#reserver" data-goto="reserver" style="text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:var(--neon,#ff2450); padding:12px 24px; border-radius:4px; box-shadow:0 0 20px var(--glow, rgba(255,36,80,.5)); transition:box-shadow .2s, transform .2s;" class="hv2">Réserver</a>
+      <a href="#reserver" data-goto="reserver" style="text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:var(--neon,#ff1a1a); padding:12px 24px; border-radius:4px; box-shadow:0 0 20px var(--glow, rgba(255,26,26,.5)); transition:box-shadow .2s, transform .2s;" class="hv2">Réserver</a>
     </div>
   </header>
 
   <!-- HERO -->
   <section id="top" style="min-height:100vh; display:flex; align-items:center; position:relative; padding:120px 24px 60px;">
-    <div style="position:absolute; inset:0; background:radial-gradient(ellipse 800px 600px at 75% 40%, var(--glow2, rgba(255,36,80,.14)), transparent 65%); pointer-events:none; animation:pulseGlow 6s ease-in-out infinite;"></div>
-    <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(255,36,80,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,36,80,.04) 1px, transparent 1px); background-size:56px 56px; mask-image:radial-gradient(ellipse at 50% 40%, black 30%, transparent 75%); pointer-events:none;"></div>
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse 800px 600px at 75% 40%, var(--glow2, rgba(255,26,26,.14)), transparent 65%); pointer-events:none; animation:pulseGlow 6s ease-in-out infinite;"></div>
+    <div style="position:absolute; inset:0; background-image:linear-gradient(rgba(255,26,26,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(255,26,26,.04) 1px, transparent 1px); background-size:56px 56px; mask-image:radial-gradient(ellipse at 50% 40%, black 30%, transparent 75%); pointer-events:none;"></div>
     <div class="hero-grid" style="max-width:1200px; margin:0 auto; width:100%; display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; position:relative;">
       <div>
-        <p style="margin:0 0 20px; display:inline-flex; align-items:center; gap:10px; border:1px solid var(--neon,#ff2450); color:var(--neon,#ff2450); font-size:12px; letter-spacing:3px; text-transform:uppercase; padding:8px 16px; border-radius:100px; box-shadow:0 0 16px var(--glow2, rgba(255,36,80,.25)), inset 0 0 12px var(--glow2, rgba(255,36,80,.15));">
-          <span style="width:8px; height:8px; border-radius:50%; background:var(--neon,#ff2450); box-shadow:0 0 10px var(--neon,#ff2450); animation:pulseGlow 1.6s infinite;"></span>
+        <p style="margin:0 0 20px; display:inline-flex; align-items:center; gap:10px; border:1px solid var(--neon,#ff1a1a); color:var(--neon,#ff1a1a); font-size:12px; letter-spacing:3px; text-transform:uppercase; padding:8px 16px; border-radius:100px; box-shadow:0 0 16px var(--glow2, rgba(255,26,26,.25)), inset 0 0 12px var(--glow2, rgba(255,26,26,.15));">
+          <span style="width:8px; height:8px; border-radius:50%; background:var(--neon,#ff1a1a); box-shadow:0 0 10px var(--neon,#ff1a1a); animation:pulseGlow 1.6s infinite;"></span>
           Ouvert — 265 rue des Pyrénées, Paris 20e
         </p>
         <h1 style="margin:0 0 24px; font-family:'Unbounded'; font-weight:800; font-size:clamp(2.6rem, 5.5vw, 4.6rem); line-height:1.02; text-transform:uppercase; letter-spacing:-1px;">
           Ta coupe.<br>Ton style.<br>
-          <span style="color:var(--neon,#ff2450); text-shadow:0 0 14px var(--glow, rgba(255,36,80,.7)), 0 0 50px var(--glow2, rgba(255,36,80,.4)); animation:var(--flick-anim, flicker 5s infinite);">Zéro compromis.</span>
+          <span style="color:var(--neon,#ff1a1a); text-shadow:0 0 14px var(--glow, rgba(255,26,26,.7)), 0 0 50px var(--glow2, rgba(255,26,26,.4)); animation:var(--flick-anim, flicker 5s infinite);">Zéro compromis.</span>
         </h1>
         <p style="margin:0 0 36px; color:#9a969a; font-size:18px; max-width:480px; line-height:1.6;">Dégradés précis, contours nets, conseils sans chichi. Réserve ton créneau en 30 secondes, viens comme tu es.</p>
         <div style="display:flex; gap:16px; flex-wrap:wrap;">
-          <a href="#reserver" data-goto="reserver" style="text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:var(--neon,#ff2450); padding:18px 34px; border-radius:4px; box-shadow:0 0 30px var(--glow, rgba(255,36,80,.5)); transition:box-shadow .2s, transform .2s;" class="hv3">Réserver un créneau</a>
+          <a href="#reserver" data-goto="reserver" style="text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:var(--neon,#ff1a1a); padding:18px 34px; border-radius:4px; box-shadow:0 0 30px var(--glow, rgba(255,26,26,.5)); transition:box-shadow .2s, transform .2s;" class="hv3">Réserver un créneau</a>
           <a href="#tarifs" style="text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:#f2f0f1; border:1px solid rgba(242,240,241,.3); padding:18px 34px; border-radius:4px; transition:border-color .2s, box-shadow .2s;" class="hv4">Voir les tarifs</a>
         </div>
         <div style="margin-top:48px; display:flex; gap:32px; flex-wrap:wrap; color:#9a969a; font-size:14px;">
@@ -302,9 +325,9 @@
       </div>
       <!-- NEON CHAIR SIGN -->
       <div style="display:flex; justify-content:center; animation:floatY 7s ease-in-out infinite;">
-        <div style="position:relative; padding:48px 56px; border:1px solid rgba(255,36,80,.25); border-radius:20px; background:rgba(255,36,80,.03); box-shadow:0 0 60px var(--glow2, rgba(255,36,80,.2)), inset 0 0 40px rgba(255,36,80,.05);">
-          <svg width="300" height="360" viewBox="0 0 100 120" fill="none" role="img" aria-label="Fauteuil de barbier en enseigne néon" style="display:block; max-width:100%; height:auto; filter:drop-shadow(0 0 8px var(--glow, rgba(255,36,80,.8))) drop-shadow(0 0 28px var(--glow2, rgba(255,36,80,.45))); animation:var(--flick-anim, flicker 7s infinite);">
-          <g stroke="var(--neon,#ff2450)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <div style="position:relative; padding:48px 56px; border:1px solid rgba(255,26,26,.25); border-radius:20px; background:rgba(255,26,26,.03); box-shadow:0 0 60px var(--glow2, rgba(255,26,26,.2)), inset 0 0 40px rgba(255,26,26,.05);">
+          <svg width="300" height="360" viewBox="0 0 100 120" fill="none" role="img" aria-label="Fauteuil de barbier en enseigne néon" style="display:block; max-width:100%; height:auto; filter:drop-shadow(0 0 8px var(--glow, rgba(255,26,26,.8))) drop-shadow(0 0 28px var(--glow2, rgba(255,26,26,.45))); animation:var(--flick-anim, flicker 7s infinite);">
+          <g stroke="var(--neon,#ff1a1a)" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <rect x="42" y="4" width="16" height="12" rx="5" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .5s ease .1s forwards;"></rect>
             <rect x="29" y="20" width="42" height="30" rx="9" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .6s ease .35s forwards;"></rect>
             <rect x="15" y="54" width="18" height="7" rx="3.5" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .35s ease .8s forwards;"></rect>
@@ -316,19 +339,19 @@
             <path d="M22 112 Q50 100 78 112" pathLength="200" style="stroke-dasharray:200; stroke-dashoffset:200; animation:draw .45s ease 1.85s forwards;"></path>
           </g>
         </svg>
-          <p style="margin:20px 0 0; text-align:center; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:6px; text-transform:uppercase; color:var(--neon,#ff2450); text-shadow:0 0 12px var(--glow, rgba(255,36,80,.7)); animation:var(--flick-anim, flicker 9s infinite);">Take a seat</p>
+          <p style="margin:20px 0 0; text-align:center; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:6px; text-transform:uppercase; color:var(--neon,#ff1a1a); text-shadow:0 0 12px var(--glow, rgba(255,26,26,.7)); animation:var(--flick-anim, flicker 9s infinite);">Take a seat</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- MARQUEE -->
-  <div style="border-top:1px solid rgba(255,36,80,.3); border-bottom:1px solid rgba(255,36,80,.3); background:rgba(255,36,80,.04); overflow:hidden; padding:16px 0;">
+  <div style="border-top:1px solid rgba(255,26,26,.3); border-bottom:1px solid rgba(255,26,26,.3); background:rgba(255,26,26,.04); overflow:hidden; padding:16px 0;">
     <div style="display:flex; gap:0; width:max-content; animation:marquee 22s linear infinite;">
-      <div style="display:flex; gap:48px; padding-right:48px; font-family:'Unbounded'; font-weight:600; font-size:14px; letter-spacing:3px; text-transform:uppercase; color:var(--neon,#ff2450); white-space:nowrap;">
+      <div style="display:flex; gap:48px; padding-right:48px; font-family:'Unbounded'; font-weight:600; font-size:14px; letter-spacing:3px; text-transform:uppercase; color:var(--neon,#ff1a1a); white-space:nowrap;">
         <span>Skin fade</span><span style="opacity:.4;">✦</span><span>Dégradé bas</span><span style="opacity:.4;">✦</span><span>Barbe &amp; serviette chaude</span><span style="opacity:.4;">✦</span><span>Contours à la lame</span><span style="opacity:.4;">✦</span><span>Designs &amp; traits</span><span style="opacity:.4;">✦</span><span>Crop texturé</span><span style="opacity:.4;">✦</span>
       </div>
-      <div style="display:flex; gap:48px; padding-right:48px; font-family:'Unbounded'; font-weight:600; font-size:14px; letter-spacing:3px; text-transform:uppercase; color:var(--neon,#ff2450); white-space:nowrap;">
+      <div style="display:flex; gap:48px; padding-right:48px; font-family:'Unbounded'; font-weight:600; font-size:14px; letter-spacing:3px; text-transform:uppercase; color:var(--neon,#ff1a1a); white-space:nowrap;">
         <span>Skin fade</span><span style="opacity:.4;">✦</span><span>Dégradé bas</span><span style="opacity:.4;">✦</span><span>Barbe &amp; serviette chaude</span><span style="opacity:.4;">✦</span><span>Contours à la lame</span><span style="opacity:.4;">✦</span><span>Designs &amp; traits</span><span style="opacity:.4;">✦</span><span>Crop texturé</span><span style="opacity:.4;">✦</span>
       </div>
     </div>
@@ -337,62 +360,12 @@
   <!-- TARIFS -->
   <section id="tarifs" data-section="" style="padding:110px 24px;">
     <div style="max-width:1200px; margin:0 auto;">
-      <div data-reveal="" style="margin-bottom:48px;">
-        <p style="margin:0 0 12px; color:var(--neon,#ff2450); font-size:13px; letter-spacing:4px; text-transform:uppercase;">01 — Prestations</p>
+      <div data-reveal="" style="margin-bottom:44px;">
+        <p style="margin:0 0 12px; color:var(--neon,#ff1a1a); font-size:13px; letter-spacing:4px; text-transform:uppercase;">01 — Prestations</p>
         <h2 style="margin:0 0 12px; font-family:'Unbounded'; font-weight:800; font-size:clamp(1.8rem,3.5vw,2.8rem); text-transform:uppercase;">Tarifs, prix nets.</h2>
-        <p style="margin:0; color:#9a969a; max-width:520px;">Pas de surprise. Chaque coupe inclut le coiffage et les finitions au rasoir.</p>
+        <p style="margin:0; color:#9a969a; max-width:560px;">Pas de surprise. Réservation en ligne, paiement sur place.</p>
       </div>
-      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:20px;">
-        <div data-reveal="" style="position:relative; background:linear-gradient(160deg, rgba(255,36,80,.1), rgba(255,36,80,.02)); border:1px solid var(--neon,#ff2450); border-radius:12px; padding:32px; box-shadow:0 0 30px var(--glow2, rgba(255,36,80,.2)); transition:transform .25s, box-shadow .25s;" class="hv5">
-          <span style="position:absolute; top:-12px; left:24px; background:var(--neon,#ff2450); color:#08080a; font-family:'Unbounded'; font-weight:600; font-size:10px; letter-spacing:2px; text-transform:uppercase; padding:5px 14px; border-radius:100px; box-shadow:0 0 16px var(--glow, rgba(255,36,80,.6));">Le plus demandé</span>
-          <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:6px;">
-            <h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:18px;">Coupe à la tondeuse</h3>
-            <span style="font-family:'Unbounded'; font-weight:800; font-size:28px; color:var(--neon,#ff2450); text-shadow:0 0 14px var(--glow, rgba(255,36,80,.6));">25€</span>
-          </div>
-          <p style="margin:0 0 12px; color:#9a969a; font-size:13px; letter-spacing:1px;">45 MIN</p>
-          <p style="margin:0; color:#bab6b9; font-size:15px; line-height:1.6;">Dégradé (bas, mid, haut ou skin), contours à la lame, coiffage produit inclus.</p>
-        </div>
-        <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:32px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
-          <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:6px;">
-            <h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:18px;">Coupe + barbe</h3>
-            <span style="font-family:'Unbounded'; font-weight:800; font-size:28px; color:var(--neon,#ff2450);">35€</span>
-          </div>
-          <p style="margin:0 0 12px; color:#9a969a; font-size:13px; letter-spacing:1px;">1 H</p>
-          <p style="margin:0; color:#bab6b9; font-size:15px; line-height:1.6;">Le combo complet : coupe au choix + taille de barbe, contours, serviette chaude.</p>
-        </div>
-        <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:32px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
-          <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:6px;">
-            <h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:18px;">Barbe seule</h3>
-            <span style="font-family:'Unbounded'; font-weight:800; font-size:28px; color:var(--neon,#ff2450);">15€</span>
-          </div>
-          <p style="margin:0 0 12px; color:#9a969a; font-size:13px; letter-spacing:1px;">25 MIN</p>
-          <p style="margin:0; color:#bab6b9; font-size:15px; line-height:1.6;">Taille, structuration, contours à la lame, huile de finition.</p>
-        </div>
-        <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:32px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
-          <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:6px;">
-            <h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:18px;">Contours / retouche</h3>
-            <span style="font-family:'Unbounded'; font-weight:800; font-size:28px; color:var(--neon,#ff2450);">10€</span>
-          </div>
-          <p style="margin:0 0 12px; color:#9a969a; font-size:13px; letter-spacing:1px;">15 MIN</p>
-          <p style="margin:0; color:#bab6b9; font-size:15px; line-height:1.6;">Contours nets entre deux coupes. Idéal pour rester frais toute la semaine.</p>
-        </div>
-        <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:32px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
-          <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:6px;">
-            <h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:18px;">Coupe -16 ans</h3>
-            <span style="font-family:'Unbounded'; font-weight:800; font-size:28px; color:var(--neon,#ff2450);">18€</span>
-          </div>
-          <p style="margin:0 0 12px; color:#9a969a; font-size:13px; letter-spacing:1px;">40 MIN</p>
-          <p style="margin:0; color:#bab6b9; font-size:15px; line-height:1.6;">Mêmes exigences, tarif étudiant-friendly. Du mardi au vendredi.</p>
-        </div>
-        <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:32px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
-          <div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:6px;">
-            <h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:18px;">Design / traits</h3>
-            <span style="font-family:'Unbounded'; font-weight:800; font-size:28px; color:var(--neon,#ff2450);">+5€</span>
-          </div>
-          <p style="margin:0 0 12px; color:#9a969a; font-size:13px; letter-spacing:1px;">+10 MIN</p>
-          <p style="margin:0; color:#bab6b9; font-size:15px; line-height:1.6;">Traits, motifs simples ou personnalisés en supplément de ta coupe.</p>
-        </div>
-      </div>
+      <div style="margin-bottom:34px;"><p data-reveal="" style="margin:0 0 16px; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:#857f88;">Les essentiels</p><div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(270px, 1fr)); gap:18px;"><div data-reveal="" style="position:relative; background:linear-gradient(160deg, rgba(255,26,26,.1), rgba(255,26,26,.02)); border:1px solid var(--neon,#ff1a1a); box-shadow:0 0 30px var(--glow2, rgba(255,26,26,.2)); border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv5"><span style="position:absolute; top:-12px; left:22px; background:var(--neon,#ff1a1a); color:#08080a; font-family:'Unbounded'; font-weight:600; font-size:10px; letter-spacing:2px; text-transform:uppercase; padding:5px 14px; border-radius:100px; box-shadow:0 0 16px var(--glow, rgba(255,26,26,.6));">Le plus demandé</span><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">Le coupe tondeuse</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a); text-shadow:0 0 14px var(--glow, rgba(255,26,26,.6));">22€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Coupe intégrale à la tondeuse, contours nets.</p></div><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">Le classique</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a);">25€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Coupe &amp; coiffage + shampooing.</p></div><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">Le numéro 10</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a);">28€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Coupe ciseaux &amp; coiffage + shampooing.</p></div><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">Le transfert</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a);">35€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Coupe transformation + shampooing — changement de look radical.</p></div></div></div><div style="margin-bottom:34px;"><p data-reveal="" style="margin:0 0 16px; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:#857f88;">Les combinés</p><div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(270px, 1fr)); gap:18px;"><div data-reveal="" style="position:relative; background:linear-gradient(160deg, rgba(255,26,26,.1), rgba(255,26,26,.02)); border:1px solid var(--neon,#ff1a1a); box-shadow:0 0 30px var(--glow2, rgba(255,26,26,.2)); border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv5"><span style="position:absolute; top:-12px; left:22px; background:var(--neon,#ff1a1a); color:#08080a; font-family:'Unbounded'; font-weight:600; font-size:10px; letter-spacing:2px; text-transform:uppercase; padding:5px 14px; border-radius:100px; box-shadow:0 0 16px var(--glow, rgba(255,26,26,.6));">Le plus demandé</span><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">Le match day</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a); text-shadow:0 0 14px var(--glow, rgba(255,26,26,.6));">30€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Coupe &amp; barbe complète.</p></div><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">L'elite</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a);">35€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Coupe ciseaux + barbe sur mesure.</p></div><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">Le duo précision</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a);">24€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Coupe &amp; bouc / moustache.</p></div></div></div><div style="margin-bottom:34px;"><p data-reveal="" style="margin:0 0 16px; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:#857f88;">Finitions &amp; traditions</p><div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(270px, 1fr)); gap:18px;"><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">La barbe seule</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a);">15€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Taille et mise en forme de la barbe uniquement.</p></div><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">La signature</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a);">12€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Contours au coupe-chou — spécialité maison.</p></div><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">Le contour permanent</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a);">10€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Traçage des contours entre deux coupes.</p></div><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">Le head clean</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a);">15€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Rasage tête à l'ancienne + serviette chaude.</p></div><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">Teinture / coloration</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:16px; color:var(--neon,#ff1a1a); white-space:nowrap;">Sur devis</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Sur devis selon longueur et technique.</p></div></div></div><div style="margin-bottom:34px;"><p data-reveal="" style="margin:0 0 16px; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:#857f88;">Academy</p><div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(270px, 1fr)); gap:18px;"><div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6"><div style="display:flex; justify-content:space-between; align-items:baseline; gap:12px; margin-bottom:8px;"><h3 style="margin:0; font-family:'Unbounded'; font-weight:600; font-size:17px;">Academy</h3><span style="font-family:'Unbounded'; font-weight:800; font-size:26px; color:var(--neon,#ff1a1a);">15€</span></div><p style="margin:0; color:#bab6b9; font-size:14.5px; line-height:1.6;">Coupe enfant (-12 ans), rapide et stylée.</p></div></div></div>
     </div>
   </section>
 
@@ -401,7 +374,7 @@
     <div style="max-width:1200px; margin:0 auto;">
       <div data-reveal="" style="margin-bottom:48px; display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap;">
         <div>
-          <p style="margin:0 0 12px; color:var(--neon,#ff2450); font-size:13px; letter-spacing:4px; text-transform:uppercase;">02 — Portfolio</p>
+          <p style="margin:0 0 12px; color:var(--neon,#ff1a1a); font-size:13px; letter-spacing:4px; text-transform:uppercase;">02 — Portfolio</p>
           <h2 style="margin:0 0 12px; font-family:'Unbounded'; font-weight:800; font-size:clamp(1.8rem,3.5vw,2.8rem); text-transform:uppercase;">Du travail réel.</h2>
           <p style="margin:0; color:#9a969a; max-width:520px;">Fait ici. Suis-nous sur Instagram pour les avant/après quotidiens.</p>
         </div>
@@ -421,10 +394,40 @@
   </section>
 
   <!-- ÉQUIPE -->
+  <!-- À PROPOS -->
+  <section id="apropos" data-section="" style="padding:110px 24px;">
+    <div style="max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:48px; align-items:center;">
+      <div data-reveal="">
+        <p style="margin:0 0 12px; color:var(--neon,#ff1a1a); font-size:13px; letter-spacing:4px; text-transform:uppercase;">03 — À propos</p>
+        <h2 style="margin:0 0 20px; font-family:'Unbounded'; font-weight:800; font-size:clamp(1.8rem,3.5vw,2.8rem); text-transform:uppercase; line-height:1.05;">Le salon</h2>
+        <div style="width:54px; height:2px; background:var(--neon,#ff1a1a); box-shadow:0 0 14px var(--glow, rgba(255,26,26,.6)); margin-bottom:24px;"></div>
+        <p style="margin:0; color:#bab6b9; font-size:16.5px; line-height:1.75;">Chez The Line Up, l'excellence de la coupe rencontre l'art du soin masculin. Niché au cœur du 20<sup>e</sup> arrondissement, notre salon vous accueille dans un cadre soigné pour une expérience taillée sur-mesure. Coupe, dégradé, taille de barbe&nbsp;: chaque prestation est pensée dans les moindres détails pour révéler votre style.</p>
+      </div>
+      <div data-reveal="" style="display:grid; grid-template-columns:repeat(2,1fr); gap:14px;">
+        <div style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:24px;">
+          <p style="margin:0; font-family:'Unbounded'; font-weight:800; font-size:30px; color:var(--neon,#ff1a1a);">5,0</p>
+          <p style="margin:6px 0 0; color:#9a969a; font-size:13px; letter-spacing:1px; text-transform:uppercase;">sur 12 avis</p>
+        </div>
+        <div style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:24px;">
+          <p style="margin:0; font-family:'Unbounded'; font-weight:800; font-size:30px; color:var(--neon,#ff1a1a);">6/7</p>
+          <p style="margin:6px 0 0; color:#9a969a; font-size:13px; letter-spacing:1px; text-transform:uppercase;">fermé le lundi</p>
+        </div>
+        <div style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:24px;">
+          <p style="margin:0; font-family:'Unbounded'; font-weight:800; font-size:30px; color:var(--neon,#ff1a1a);">13</p>
+          <p style="margin:6px 0 0; color:#9a969a; font-size:13px; letter-spacing:1px; text-transform:uppercase;">prestations</p>
+        </div>
+        <div style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:24px;">
+          <p style="margin:0; font-family:'Unbounded'; font-weight:800; font-size:30px; color:var(--neon,#ff1a1a);">10€</p>
+          <p style="margin:6px 0 0; color:#9a969a; font-size:13px; letter-spacing:1px; text-transform:uppercase;">à partir de</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="equipe" data-section="" style="padding:110px 24px;">
     <div style="max-width:1200px; margin:0 auto;">
       <div data-reveal="" style="margin-bottom:48px;">
-        <p style="margin:0 0 12px; color:var(--neon,#ff2450); font-size:13px; letter-spacing:4px; text-transform:uppercase;">03 — L'équipe</p>
+        <p style="margin:0 0 12px; color:var(--neon,#ff1a1a); font-size:13px; letter-spacing:4px; text-transform:uppercase;">03 — L'équipe</p>
         <h2 style="margin:0 0 12px; font-family:'Unbounded'; font-weight:800; font-size:clamp(1.8rem,3.5vw,2.8rem); text-transform:uppercase;">Choisis ton barbier.</h2>
         <p style="margin:0; color:#9a969a; max-width:520px;">Réserve directement avec lui.</p>
       </div>
@@ -432,10 +435,10 @@
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; overflow:hidden; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
           <figure class="ph ph-por" data-label="portrait — barbier 1"><img src="./photos/barbier-1.jpg" alt="Barbier de l'équipe The Line Up, barber shop Paris 20e" loading="lazy" decoding="async" width="640" height="800" onerror="this.closest('.ph').removeAttribute('data-has-img');this.remove()"></figure>
           <div style="padding:24px;">
-            <h3 style="margin:0 0 4px; font-family:'Unbounded'; font-weight:600; font-size:17px; color:#857f88; border:1px dashed #35313a; border-radius:6px; padding:6px 10px; display:inline-block;">Prénom à compléter</h3>
+            <h3 style="margin:0 0 4px; font-family:'Unbounded'; font-weight:600; font-size:17px;">Kissi</h3>
             <p style="margin:8px 0 8px; color:#857f88; font-size:13px; letter-spacing:1px; text-transform:uppercase;">Spécialité à compléter</p>
             <p style="margin:0 0 16px; color:#6a666d; font-size:13px; line-height:1.6; font-family:ui-monospace,SFMono-Regular,Menlo,monospace;">une phrase de présentation</p>
-            <a href="#reserver" data-barbier="1" style="font-size:14px; font-weight:700; color:#f2f0f1; text-decoration:none; border-bottom:1px solid var(--neon,#ff2450); padding-bottom:2px;">Réserver avec lui →</a>
+            <a href="#reserver" data-barbier="1" style="font-size:14px; font-weight:700; color:#f2f0f1; text-decoration:none; border-bottom:1px solid var(--neon,#ff1a1a); padding-bottom:2px;">Réserver avec lui →</a>
           </div>
         </div>
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; overflow:hidden; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
@@ -444,7 +447,7 @@
             <h3 style="margin:0 0 4px; font-family:'Unbounded'; font-weight:600; font-size:17px; color:#857f88; border:1px dashed #35313a; border-radius:6px; padding:6px 10px; display:inline-block;">Prénom à compléter</h3>
             <p style="margin:8px 0 8px; color:#857f88; font-size:13px; letter-spacing:1px; text-transform:uppercase;">Spécialité à compléter</p>
             <p style="margin:0 0 16px; color:#6a666d; font-size:13px; line-height:1.6; font-family:ui-monospace,SFMono-Regular,Menlo,monospace;">une phrase de présentation</p>
-            <a href="#reserver" data-barbier="2" style="font-size:14px; font-weight:700; color:#f2f0f1; text-decoration:none; border-bottom:1px solid var(--neon,#ff2450); padding-bottom:2px;">Réserver avec lui →</a>
+            <a href="#reserver" data-barbier="2" style="font-size:14px; font-weight:700; color:#f2f0f1; text-decoration:none; border-bottom:1px solid var(--neon,#ff1a1a); padding-bottom:2px;">Réserver avec lui →</a>
           </div>
         </div>
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; overflow:hidden; transition:transform .25s, border-color .25s, box-shadow .25s;" class="hv6">
@@ -453,7 +456,7 @@
             <h3 style="margin:0 0 4px; font-family:'Unbounded'; font-weight:600; font-size:17px; color:#857f88; border:1px dashed #35313a; border-radius:6px; padding:6px 10px; display:inline-block;">Prénom à compléter</h3>
             <p style="margin:8px 0 8px; color:#857f88; font-size:13px; letter-spacing:1px; text-transform:uppercase;">Spécialité à compléter</p>
             <p style="margin:0 0 16px; color:#6a666d; font-size:13px; line-height:1.6; font-family:ui-monospace,SFMono-Regular,Menlo,monospace;">une phrase de présentation</p>
-            <a href="#reserver" data-barbier="3" style="font-size:14px; font-weight:700; color:#f2f0f1; text-decoration:none; border-bottom:1px solid var(--neon,#ff2450); padding-bottom:2px;">Réserver avec lui →</a>
+            <a href="#reserver" data-barbier="3" style="font-size:14px; font-weight:700; color:#f2f0f1; text-decoration:none; border-bottom:1px solid var(--neon,#ff1a1a); padding-bottom:2px;">Réserver avec lui →</a>
           </div>
         </div>
       </div>
@@ -461,21 +464,48 @@
   </section>
 
   <!-- INFOS -->
+
+  <!-- AVIS -->
+  <!-- Avis reels repris de la fiche Planity du salon (5,0/5, 12 avis).
+       Mettre a jour quand de nouveaux avis arrivent. -->
+  <section id="avis" data-section="" style="padding:110px 0 100px; background:#0c0b0e; overflow:hidden;">
+    <div style="max-width:1200px; margin:0 auto; padding:0 24px;">
+      <div data-reveal="" style="margin-bottom:40px;">
+        <p style="margin:0 0 10px; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:3px; text-transform:uppercase; color:var(--neon,#ff1a1a);">Ce qu'ils en disent</p>
+        <h2 style="margin:0; font-family:'Unbounded'; font-weight:800; font-size:clamp(28px,5vw,46px); line-height:1.05; color:#f2f0f1;">Les avis du vestiaire</h2>
+        <p style="margin:14px 0 0; color:#9a969a; font-size:15px; max-width:560px;"><span style="color:#ff1a1a; font-weight:700;">5,0/5</span> sur 12 avis clients. Les retours de ceux qui sont passés sur le fauteuil.</p>
+      </div>
+    </div>
+
+    <div class="avis-viewport avis-mask" data-reveal="" style="overflow:hidden; padding:4px 0 8px;">
+      <div class="avis-rail">
+        <div style="display:flex;"><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Déco façon vestiaire de foot, ambiance premium et un coiffeur sympa et précis. Coupe, barbe et contours impeccables. Pas qu'un barber, une vraie expérience&nbsp;!&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>10/09/2026</span></figcaption></figure><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Accueil au top, cadre magnifique qui rappelle une ambiance de vestiaire, Kissima qui a vraiment le sens du détail&nbsp;! Je recommande à 100%.&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>06/09/2026</span></figcaption></figure><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Très bonne expérience&nbsp;! Coiffeur sympa, respectueux et professionnel. Il met à l'aise, travaille efficacement et avec soin. Je recommande sans hésiter&nbsp;!&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>02/09/2026</span></figcaption></figure><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Déco façon vestiaire de foot, ambiance premium et un coiffeur sympa et précis. Coupe, barbe et contours impeccables. Pas qu'un barber, une vraie expérience&nbsp;!&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>10/09/2026</span></figcaption></figure><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Accueil au top, cadre magnifique qui rappelle une ambiance de vestiaire, Kissima qui a vraiment le sens du détail&nbsp;! Je recommande à 100%.&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>06/09/2026</span></figcaption></figure><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Très bonne expérience&nbsp;! Coiffeur sympa, respectueux et professionnel. Il met à l'aise, travaille efficacement et avec soin. Je recommande sans hésiter&nbsp;!&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>02/09/2026</span></figcaption></figure></div>
+        <div style="display:flex;" aria-hidden="true"><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Déco façon vestiaire de foot, ambiance premium et un coiffeur sympa et précis. Coupe, barbe et contours impeccables. Pas qu'un barber, une vraie expérience&nbsp;!&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>10/09/2026</span></figcaption></figure><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Accueil au top, cadre magnifique qui rappelle une ambiance de vestiaire, Kissima qui a vraiment le sens du détail&nbsp;! Je recommande à 100%.&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>06/09/2026</span></figcaption></figure><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Très bonne expérience&nbsp;! Coiffeur sympa, respectueux et professionnel. Il met à l'aise, travaille efficacement et avec soin. Je recommande sans hésiter&nbsp;!&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>02/09/2026</span></figcaption></figure><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Déco façon vestiaire de foot, ambiance premium et un coiffeur sympa et précis. Coupe, barbe et contours impeccables. Pas qu'un barber, une vraie expérience&nbsp;!&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>10/09/2026</span></figcaption></figure><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Accueil au top, cadre magnifique qui rappelle une ambiance de vestiaire, Kissima qui a vraiment le sens du détail&nbsp;! Je recommande à 100%.&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>06/09/2026</span></figcaption></figure><figure class="avis-card"><div style="display:flex;align-items:center;gap:4px;"><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span><span style="color:#ff1a1a;font-size:13px;">&#9733;</span></div><blockquote style="margin:0;font-size:14.5px;line-height:1.55;color:#f2f0f1;">&laquo;&nbsp;Très bonne expérience&nbsp;! Coiffeur sympa, respectueux et professionnel. Il met à l'aise, travaille efficacement et avec soin. Je recommande sans hésiter&nbsp;!&nbsp;&raquo;</blockquote><figcaption style="margin-top:auto;display:flex;align-items:center;gap:8px;font-size:12px;color:#857f88;letter-spacing:.5px;"><span style="font-weight:700;color:#bab6b9;">Client Planity</span><span style="opacity:.5;">&bull;</span><span>02/09/2026</span></figcaption></figure></div>
+      </div>
+    </div>
+
+    <div style="max-width:1200px; margin:34px auto 0; padding:0 24px;">
+      <!-- A REMPLACER par le lien court d'avis du salon (Google Business Profile > Demander des avis),
+           de la forme https://g.page/r/XXXXXXXX/review : il ouvre directement la fenetre de notation. -->
+      <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Line+Up+265+rue+des+Pyr%C3%A9n%C3%A9es+75020+Paris" target="_blank" rel="noopener" style="display:inline-block; text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#f2f0f1; border:1px solid rgba(255,26,26,.5); padding:14px 28px; border-radius:4px;">Voir tous les avis</a>
+    </div>
+  </section>
+
   <section id="infos" data-section="" style="padding:110px 24px; background:#0c0b0e;">
     <div style="max-width:1200px; margin:0 auto;">
       <div data-reveal="" style="margin-bottom:48px;">
-        <p style="margin:0 0 12px; color:var(--neon,#ff2450); font-size:13px; letter-spacing:4px; text-transform:uppercase;">04 — Infos &amp; accès</p>
+        <p style="margin:0 0 12px; color:var(--neon,#ff1a1a); font-size:13px; letter-spacing:4px; text-transform:uppercase;">04 — Infos &amp; accès</p>
         <h2 style="margin:0 0 12px; font-family:'Unbounded'; font-weight:800; font-size:clamp(1.8rem,3.5vw,2.8rem); text-transform:uppercase;">Facile à trouver.</h2>
         <p style="margin:0; color:#9a969a; max-width:520px;">Encore plus facile à contacter.</p>
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px;">
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px;">
-          <h3 style="margin:0 0 14px; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--neon,#ff2450);">Adresse</h3>
+          <h3 style="margin:0 0 14px; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--neon,#ff1a1a);">Adresse</h3>
           <p style="margin:0; color:#bab6b9; line-height:1.7;"><a href="https://maps.google.com/?q=265+rue+des+Pyr%C3%A9n%C3%A9es+75020+Paris" target="_blank" rel="noopener" style="color:#f2f0f1;">265 rue des Pyrénées<br>75020 Paris</a></p>
           <p style="margin:10px 0 0; color:#9a969a; font-size:14px;">M° Gambetta (L3) / Bus 26</p>
         </div>
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px;">
-          <h3 style="margin:0 0 14px; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--neon,#ff2450);">Horaires</h3>
+          <h3 style="margin:0 0 14px; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--neon,#ff1a1a);">Horaires</h3>
           <div style="display:grid; gap:6px; color:#9a969a; font-size:14px;">
             <div style="display:flex; justify-content:space-between; border-bottom:1px dashed #26232a; padding-bottom:6px;"><span>Lundi</span><span>Fermé</span></div>
             <div style="display:flex; justify-content:space-between; border-bottom:1px dashed #26232a; padding-bottom:6px;"><span>Mar – Sam</span><span style="color:#f2f0f1;">10h30 – 20h</span></div>
@@ -483,13 +513,13 @@
           </div>
         </div>
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px;">
-          <h3 style="margin:0 0 14px; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--neon,#ff2450);">Contact</h3>
-          <p style="margin:0 0 10px;"><a href="tel:+33618594070" style="color:#f2f0f1; font-family:'Unbounded'; font-weight:600; font-size:15px; text-decoration:none;">06 18 59 40 70</a></p>
-          <p style="margin:0 0 8px;"><a href="https://wa.me/33618594070" target="_blank" rel="noopener" style="color:#9a969a; font-size:14px;">WhatsApp — question rapide</a></p>
+          <h3 style="margin:0 0 14px; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--neon,#ff1a1a);">Contact</h3>
+          <p style="margin:0 0 10px;"><a href="tel:+33698297149" style="color:#f2f0f1; font-family:'Unbounded'; font-weight:600; font-size:15px; text-decoration:none;">06 98 29 71 49</a></p>
+          <p style="margin:0 0 8px;"><a href="https://wa.me/33698297149" target="_blank" rel="noopener" style="color:#9a969a; font-size:14px;">WhatsApp — question rapide</a></p>
           <p style="margin:0;"><a href="https://instagram.com/thelineup.tlu" target="_blank" rel="noopener" style="color:#9a969a; font-size:14px;">@thelineup.tlu<br><br></a></p>
         </div>
         <div data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:28px;">
-          <h3 style="margin:0 0 14px; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--neon,#ff2450);">Paiement</h3>
+          <h3 style="margin:0 0 14px; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:2px; text-transform:uppercase; color:var(--neon,#ff1a1a);">Paiement</h3>
           <p style="margin:0 0 8px; color:#bab6b9; font-size:14px; line-height:1.7;">CB, sans contact, Apple Pay, espèces.</p>
           <p style="margin:0; color:#9a969a; font-size:14px;">Cartes cadeaux disponibles au salon.</p>
         </div>
@@ -504,7 +534,7 @@
           loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           allowfullscreen></iframe>
         <a href="https://maps.google.com/?q=265+rue+des+Pyr%C3%A9n%C3%A9es+75020+Paris" target="_blank" rel="noopener"
-           style="position:absolute; right:14px; bottom:14px; display:inline-flex; align-items:center; gap:8px; min-height:44px; text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:var(--neon,#ff2450); padding:0 18px; border-radius:6px; box-shadow:0 0 24px var(--glow, rgba(255,36,80,.5));">
+           style="position:absolute; right:14px; bottom:14px; display:inline-flex; align-items:center; gap:8px; min-height:44px; text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:var(--neon,#ff1a1a); padding:0 18px; border-radius:6px; box-shadow:0 0 24px var(--glow, rgba(255,26,26,.5));">
           Itinéraire →
         </a>
       </div>
@@ -515,7 +545,7 @@
   <section id="faq" data-section="" style="padding:110px 24px;">
     <div style="max-width:840px; margin:0 auto;">
       <div data-reveal="" style="margin-bottom:48px;">
-        <p style="margin:0 0 12px; color:var(--neon,#ff2450); font-size:13px; letter-spacing:4px; text-transform:uppercase;">05 — FAQ</p>
+        <p style="margin:0 0 12px; color:var(--neon,#ff1a1a); font-size:13px; letter-spacing:4px; text-transform:uppercase;">05 — FAQ</p>
         <h2 style="margin:0; font-family:'Unbounded'; font-weight:800; font-size:clamp(1.8rem,3.5vw,2.8rem); text-transform:uppercase;">Questions fréquentes.</h2>
       </div>
       <div style="display:grid; gap:12px;">
@@ -537,7 +567,7 @@
         </details>
         <details data-reveal="" style="background:#111013; border:1px solid #26232a; border-radius:12px; padding:22px 26px;">
           <summary style="font-weight:700; font-size:16px;">Vous prenez les mineurs ?</summary>
-          <p style="margin:14px 0 0; color:#9a969a; line-height:1.7;">Oui, tarif -16 ans en semaine. En dessous de 12 ans, un accompagnant est demandé.</p>
+          <p style="margin:14px 0 0; color:#9a969a; line-height:1.7;">Oui. La prestation Academy est prévue pour les moins de 12 ans, accompagnés d'un adulte.</p>
         </details>
       </div>
     </div>
@@ -545,18 +575,18 @@
 
   <!-- CTA FINAL -->
   <section data-section="" style="padding:120px 24px; position:relative; overflow:hidden;">
-    <div style="position:absolute; inset:0; background:radial-gradient(ellipse 700px 400px at 50% 100%, var(--glow2, rgba(255,36,80,.18)), transparent 70%); pointer-events:none;"></div>
+    <div style="position:absolute; inset:0; background:radial-gradient(ellipse 700px 400px at 50% 100%, var(--glow2, rgba(255,26,26,.18)), transparent 70%); pointer-events:none;"></div>
     <div data-reveal="" style="max-width:800px; margin:0 auto; text-align:center; position:relative;">
-      <h2 style="margin:0 0 16px; font-family:'Unbounded'; font-weight:800; font-size:clamp(2rem,4.5vw,3.4rem); text-transform:uppercase; line-height:1.1;">Prêt pour ta<br><span style="color:var(--neon,#ff2450); text-shadow:0 0 16px var(--glow, rgba(255,36,80,.7)); animation:var(--flick-anim, flicker 6s infinite);">prochaine coupe ?</span></h2>
+      <h2 style="margin:0 0 16px; font-family:'Unbounded'; font-weight:800; font-size:clamp(2rem,4.5vw,3.4rem); text-transform:uppercase; line-height:1.1;">Prêt pour ta<br><span style="color:var(--neon,#ff1a1a); text-shadow:0 0 16px var(--glow, rgba(255,26,26,.7)); animation:var(--flick-anim, flicker 6s infinite);">prochaine coupe ?</span></h2>
       <p style="margin:0 0 36px; color:#9a969a; font-size:17px;">Réserve en ligne, choisis ton barbier, arrive frais — repars plus frais.</p>
-      <a href="#reserver" data-goto="reserver" style="display:inline-block; text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:14px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:var(--neon,#ff2450); padding:20px 44px; border-radius:4px; box-shadow:0 0 40px var(--glow, rgba(255,36,80,.6)); transition:box-shadow .2s, transform .2s;" class="hv8">Réserver maintenant</a>
+      <a href="#reserver" data-goto="reserver" style="display:inline-block; text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:14px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:var(--neon,#ff1a1a); padding:20px 44px; border-radius:4px; box-shadow:0 0 40px var(--glow, rgba(255,26,26,.6)); transition:box-shadow .2s, transform .2s;" class="hv8">Réserver maintenant</a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer style="border-top:1px solid #1c1a20; padding:44px 24px; color:#9a969a; font-size:14px;">
     <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; gap:24px; flex-wrap:wrap; align-items:center;">
-      <div><strong style="color:#f2f0f1; font-family:'Unbounded'; font-size:13px; letter-spacing:1px;">THE LINE UP</strong> — Barber Shop Paris<br>265 rue des Pyrénées, 75020 Paris · <a href="tel:+33618594070" style="color:#9a969a;">06 18 59 40 70</a></div>
+      <div><strong style="color:#f2f0f1; font-family:'Unbounded'; font-size:13px; letter-spacing:1px;">THE LINE UP</strong> — Barber Shop Paris<br>265 rue des Pyrénées, 75020 Paris · <a href="tel:+33698297149" style="color:#9a969a;">06 98 29 71 49</a></div>
       <div style="display:flex; gap:18px;"><a href="#tarifs" style="color:#9a969a; text-decoration:none;">Tarifs</a><a href="#equipe" style="color:#9a969a; text-decoration:none;">Équipe</a><a href="#faq" style="color:#9a969a; text-decoration:none;">FAQ</a><a href="https://instagram.com/thelineup.tlu" style="color:#9a969a; text-decoration:none;">Instagram</a></div>
       <div>© 2026 The Line Up</div>
     </div>
@@ -571,13 +601,13 @@
 <div id="page-reserver" hidden>
 
   <div style="min-height:100vh; background:#08080a; position:relative; overflow-x:hidden;">
-    <div style="position:fixed; inset:0; background:radial-gradient(ellipse 700px 500px at 50% 0%, rgba(255,36,80,.12), transparent 60%); pointer-events:none; animation:pulseGlow 7s ease-in-out infinite;"></div>
+    <div style="position:fixed; inset:0; background:radial-gradient(ellipse 700px 500px at 50% 0%, rgba(255,26,26,.12), transparent 60%); pointer-events:none; animation:pulseGlow 7s ease-in-out infinite;"></div>
 
     <!-- HEADER RÉSERVATION -->
     <header style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:28px 24px 0; display:flex; align-items:center; justify-content:space-between; gap:16px;">
       <a href="#top" data-goto="site" style="display:flex; align-items:center; gap:12px; text-decoration:none;" aria-label="The Line Up — retour à l'accueil">
-        <svg width="26" height="32" viewBox="0 0 100 120" fill="none" style="filter:drop-shadow(0 0 6px rgba(255,36,80,.6));" aria-hidden="true">
-          <g stroke="#ff2450" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="26" height="32" viewBox="0 0 100 120" fill="none" style="filter:drop-shadow(0 0 6px rgba(255,26,26,.6));" aria-hidden="true">
+          <g stroke="#ff1a1a" stroke-width="5.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
             <rect x="42" y="4" width="16" height="12" rx="5"></rect>
             <rect x="29" y="20" width="42" height="30" rx="9"></rect>
             <rect x="15" y="54" width="18" height="7" rx="3.5"></rect>
@@ -587,14 +617,14 @@
             <path d="M22 112 Q50 100 78 112"></path>
           </g>
         </svg>
-        <span style="font-family:'Unbounded'; font-weight:800; font-size:13px; letter-spacing:2px; text-transform:uppercase;">The <span style="color:#ff2450; text-shadow:0 0 12px rgba(255,36,80,.6);">Line Up</span></span>
+        <span style="font-family:'Unbounded'; font-weight:800; font-size:13px; letter-spacing:2px; text-transform:uppercase;">The <span style="color:#ff1a1a; text-shadow:0 0 12px rgba(255,26,26,.6);">Line Up</span></span>
       </a>
       <a href="#top" data-goto="site" class="hv1" style="text-decoration:none; font-size:13px; color:#9a969a;">&larr; Retour au site</a>
     </header>
 
     <main style="position:relative; z-index:2; max-width:760px; margin:0 auto; padding:40px 24px 100px;">
-      <p style="margin:0 0 10px; color:#ff2450; font-size:13px; letter-spacing:4px; text-transform:uppercase;">R&eacute;servation en ligne</p>
-      <h1 style="margin:0 0 8px; font-family:'Unbounded'; font-weight:800; font-size:clamp(2rem,5vw,3rem); text-transform:uppercase; line-height:1.05;">R&eacute;serve ton <span style="color:#ff2450; text-shadow:0 0 14px rgba(255,36,80,.7); animation:flicker 6s infinite;">cr&eacute;neau</span></h1>
+      <p style="margin:0 0 10px; color:#ff1a1a; font-size:13px; letter-spacing:4px; text-transform:uppercase;">R&eacute;servation en ligne</p>
+      <h1 style="margin:0 0 8px; font-family:'Unbounded'; font-weight:800; font-size:clamp(2rem,5vw,3rem); text-transform:uppercase; line-height:1.05;">R&eacute;serve ton <span style="color:#ff1a1a; text-shadow:0 0 14px rgba(255,26,26,.7); animation:flicker 6s infinite;">cr&eacute;neau</span></h1>
       <p style="margin:0 0 40px; color:#9a969a; font-size:16px;">30 secondes, quatre &eacute;tapes. Viens comme tu es.</p>
 
       <!-- Barre d'étapes (générée par JS) -->
@@ -614,12 +644,19 @@
    Modifier SERVICES / BARBERS / TIMES / CLOSED_DAYS ci-dessous.
    ============================================================ */
 const SERVICES = [
-  { id:1, name:'Coupe à la tondeuse', duration:'45 min', desc:'dégradé, contours lame, coiffage', price:'25€' },
-  { id:2, name:'Coupe + barbe',       duration:'1 h',    desc:'combo complet, serviette chaude', price:'35€' },
-  { id:3, name:'Barbe seule',         duration:'25 min', desc:'taille, structuration, huile',    price:'15€' },
-  { id:4, name:'Contours / retouche', duration:'15 min', desc:'entre deux coupes',          price:'10€' },
-  { id:5, name:'Coupe -16 ans',       duration:'40 min', desc:'tarif étudiant, en semaine', price:'18€' },
-  { id:6, name:'Design / traits',     duration:'+10 min',desc:'en supplément',              price:'+5€' },
+  { id:1,  name:'Le coupe tondeuse',    duration:'', desc:'contours nets',                  price:'22€' },
+  { id:2,  name:'Le classique',         duration:'', desc:'coupe & coiffage + shampooing',  price:'25€' },
+  { id:3,  name:'Le numéro 10',         duration:'', desc:'coupe ciseaux + shampooing',     price:'28€' },
+  { id:4,  name:'Le transfert',         duration:'', desc:'transformation + shampooing',    price:'35€' },
+  { id:5,  name:'Le match day',         duration:'', desc:'coupe & barbe complète',         price:'30€' },
+  { id:6,  name:"L'elite",              duration:'', desc:'coupe ciseaux + barbe sur mesure',price:'35€' },
+  { id:7,  name:'Le duo précision',     duration:'', desc:'coupe & bouc / moustache',       price:'24€' },
+  { id:8,  name:'La barbe seule',       duration:'', desc:'taille et mise en forme',        price:'15€' },
+  { id:9,  name:'La signature',         duration:'', desc:'contours au coupe-chou',         price:'12€' },
+  { id:10, name:'Le contour permanent', duration:'', desc:'entre deux coupes',              price:'10€' },
+  { id:11, name:'Le head clean',        duration:'', desc:'rasage tête + serviette chaude', price:'15€' },
+  { id:12, name:'Teinture / coloration',duration:'', desc:'selon longueur et technique',    price:'Sur devis' },
+  { id:13, name:'Academy',              duration:'', desc:'coupe enfant (-12 ans)',         price:'15€' },
 ];
 /* ÉQUIPE — à remplir dès que le salon donne les prénoms.
    DEUX endroits par barbier, et ils doivent concorder :
@@ -630,7 +667,7 @@ const SERVICES = [
    Les photos vont dans /photos/ sous les noms barbier-1.jpg,
    barbier-2.jpg, barbier-3.jpg. */
 const BARBERS = [
-  { id:1, name:'Barbier 1',   initial:'1', specialty:'spécialité à compléter' },
+  { id:1, name:'Kissi',       initial:'K', specialty:'spécialité à compléter' },
   { id:2, name:'Barbier 2',   initial:'2', specialty:'spécialité à compléter' },
   { id:3, name:'Barbier 3',   initial:'3', specialty:'spécialité à compléter' },
   { id:0, name:'Peu importe', initial:'✦', specialty:'Premier dispo' },
@@ -685,7 +722,7 @@ let DAYS = buildDays();
 
 // styles d'état actif / inactif (identiques à la maquette)
 const N = a => a
-  ? { bg:'rgba(255,36,80,.12)', brd:'#ff2450', glow:'0 0 24px rgba(255,36,80,.3)', fg:'#f2f0f1' }
+  ? { bg:'rgba(255,26,26,.12)', brd:'#ff1a1a', glow:'0 0 24px rgba(255,26,26,.3)', fg:'#f2f0f1' }
   : { bg:'#0c0b0e', brd:'#26232a', glow:'none', fg:'#f2f0f1' };
 
 function canNext() {
@@ -708,10 +745,10 @@ function renderSteps() {
     const n = i+1, done = S.step > n, cur = S.step === n;
     return `<div style="display:flex; align-items:center; flex:1; min-width:0;">
       <div style="display:flex; align-items:center; gap:10px; min-width:0;">
-        <div style="width:34px; height:34px; flex:none; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Unbounded'; font-weight:600; font-size:13px; border:1.5px solid ${(cur||done)?'#ff2450':'#26232a'}; background:${done?'#ff2450':(cur?'rgba(255,36,80,.12)':'#0c0b0e')}; color:${done?'#08080a':(cur?'#ff2450':'#6a666d')}; box-shadow:${(cur||done)?'0 0 18px rgba(255,36,80,.4)':'none'}; transition:all .3s;">${done?'✓':n}</div>
+        <div style="width:34px; height:34px; flex:none; border-radius:50%; display:flex; align-items:center; justify-content:center; font-family:'Unbounded'; font-weight:600; font-size:13px; border:1.5px solid ${(cur||done)?'#ff1a1a':'#26232a'}; background:${done?'#ff1a1a':(cur?'rgba(255,26,26,.12)':'#0c0b0e')}; color:${done?'#08080a':(cur?'#ff1a1a':'#6a666d')}; box-shadow:${(cur||done)?'0 0 18px rgba(255,26,26,.4)':'none'}; transition:all .3s;">${done?'✓':n}</div>
         <span class="step-label" style="font-size:12px; letter-spacing:1px; text-transform:uppercase; color:${(cur||done)?'#f2f0f1':'#6a666d'}; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${label}</span>
       </div>
-      ${n<4 ? `<div style="flex:1; height:1.5px; margin:0 12px; background:${done?'#ff2450':'#26232a'}; transition:background .3s;"></div>` : ''}
+      ${n<4 ? `<div style="flex:1; height:1.5px; margin:0 12px; background:${done?'#ff1a1a':'#26232a'}; transition:background .3s;"></div>` : ''}
     </div>`;
   }).join('');
 }
@@ -727,7 +764,7 @@ function renderPanel() {
         <button class="hv7" data-pick="service" data-id="${sv.id}" role="radio" aria-checked="${S.service===sv.id}" style="text-align:left; cursor:pointer; display:flex; justify-content:space-between; align-items:center; gap:16px; background:${c.bg}; border:1.5px solid ${c.brd}; border-radius:12px; padding:18px 22px; color:#f2f0f1; box-shadow:${c.glow}; transition:all .2s;">
           <span><span style="display:block; font-family:'Unbounded'; font-weight:600; font-size:16px;">${sv.name}</span>
           <span style="display:block; color:#9a969a; font-size:13px; margin-top:3px;">${sv.duration} · ${sv.desc}</span></span>
-          <span style="font-family:'Unbounded'; font-weight:800; font-size:22px; color:#ff2450; text-shadow:0 0 12px rgba(255,36,80,.5); white-space:nowrap;">${sv.price}</span>
+          <span style="font-family:'Unbounded'; font-weight:800; font-size:22px; color:#ff1a1a; text-shadow:0 0 12px rgba(255,26,26,.5); white-space:nowrap;">${sv.price}</span>
         </button>`; }).join('')}
       </div></div>`;
   }
@@ -738,7 +775,7 @@ function renderPanel() {
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px;" role="radiogroup" aria-label="Barbiers">
       ${BARBERS.map(b => { const c = N(S.barber === b.id); return `
         <button class="hv7" data-pick="barber" data-id="${b.id}" role="radio" aria-checked="${S.barber===b.id}" style="cursor:pointer; text-align:center; background:${c.bg}; border:1.5px solid ${c.brd}; border-radius:12px; padding:22px 16px; color:#f2f0f1; box-shadow:${c.glow}; transition:all .2s;">
-          <span style="width:56px; height:56px; margin:0 auto 12px; border-radius:50%; background:repeating-linear-gradient(45deg,#16141a,#16141a 8px,#1c1922 8px,#1c1922 16px); border:1px solid #2a2730; display:flex; align-items:center; justify-content:center; font-family:'Unbounded'; font-weight:600; color:#ff2450;">${b.initial}</span>
+          <span style="width:56px; height:56px; margin:0 auto 12px; border-radius:50%; background:repeating-linear-gradient(45deg,#16141a,#16141a 8px,#1c1922 8px,#1c1922 16px); border:1px solid #2a2730; display:flex; align-items:center; justify-content:center; font-family:'Unbounded'; font-weight:600; color:#ff1a1a;">${b.initial}</span>
           <span style="display:block; font-family:'Unbounded'; font-weight:600; font-size:15px;">${b.name}</span>
           <span style="display:block; color:#9a969a; font-size:12px; margin-top:4px; line-height:1.4;">${b.specialty}</span>
         </button>`; }).join('')}
@@ -772,17 +809,17 @@ function renderPanel() {
         <input id="f-email" value="${S.email}" placeholder="Email (optionnel)" type="email" autocomplete="email" aria-label="Email" style="${f}">
       </div>
       <div style="margin-top:24px; background:#0c0b0e; border:1px solid #26232a; border-radius:12px; padding:20px 22px;">
-        <div style="font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#ff2450; margin-bottom:14px;">Récapitulatif</div>
+        <div style="font-size:12px; letter-spacing:2px; text-transform:uppercase; color:#ff1a1a; margin-bottom:14px;">Récapitulatif</div>
         <div style="display:grid; gap:9px; font-size:14px;">
           <div style="display:flex; justify-content:space-between; gap:16px;"><span style="color:#9a969a;">Prestation</span><span style="text-align:right;">${sumService()}</span></div>
           <div style="display:flex; justify-content:space-between; gap:16px;"><span style="color:#9a969a;">Barbier</span><span style="text-align:right;">${sumBarber()}</span></div>
           <div style="display:flex; justify-content:space-between; gap:16px;"><span style="color:#9a969a;">Date &amp; heure</span><span style="text-align:right;">${sumWhen()}</span></div>
-          <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px dashed #26232a; padding-top:9px; margin-top:4px;"><span style="color:#9a969a;">Total</span><span style="font-family:'Unbounded'; font-weight:800; color:#ff2450;">${sumPrice()}</span></div>
+          <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px dashed #26232a; padding-top:9px; margin-top:4px;"><span style="color:#9a969a;">Total</span><span style="font-family:'Unbounded'; font-weight:800; color:#ff1a1a;">${sumPrice()}</span></div>
         </div>
       </div></div>`;
   }
   // Étape 5 — confirmation
-  const btnPrimary = "display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:52px; text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:#ff2450; padding:16px 30px; border-radius:6px; box-shadow:0 0 30px rgba(255,36,80,.45);";
+  const btnPrimary = "display:inline-flex; align-items:center; justify-content:center; gap:10px; min-height:52px; text-decoration:none; font-family:'Unbounded'; font-weight:600; font-size:13px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:#ff1a1a; padding:16px 30px; border-radius:6px; box-shadow:0 0 30px rgba(255,26,26,.45);";
 
   /* Rendez-vous pris. Si PLANITY_URL est renseigné, un bouton permet
      d'ouvrir l'agenda officiel du salon pour finaliser. */
@@ -801,10 +838,10 @@ function renderPanel() {
     `<p style="margin:0 0 22px; display:inline-block; border:1px solid #26232a; border-radius:100px; padding:7px 15px; color:#857f88; font-size:11px; letter-spacing:2px; text-transform:uppercase;">Démo — agenda Planity à brancher</p>`;
 
   return `<div style="text-align:center; padding:20px 0;">
-    <div style="width:88px; height:88px; margin:0 auto 24px; border-radius:50%; border:2px solid #ff2450; display:flex; align-items:center; justify-content:center; box-shadow:0 0 40px rgba(255,36,80,.5); animation:popIn .5s cubic-bezier(.2,.8,.2,1);">
-      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 L10 18 L20 6" stroke="#ff2450" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+    <div style="width:88px; height:88px; margin:0 auto 24px; border-radius:50%; border:2px solid #ff1a1a; display:flex; align-items:center; justify-content:center; box-shadow:0 0 40px rgba(255,26,26,.5); animation:popIn .5s cubic-bezier(.2,.8,.2,1);">
+      <svg width="40" height="40" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 12.5 L10 18 L20 6" stroke="#ff1a1a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path></svg>
     </div>
-    <h2 style="margin:0 0 10px; font-family:'Unbounded'; font-weight:800; font-size:24px; text-transform:uppercase;">C'est réservé <span style="color:#ff2450;">&#10022;</span></h2>
+    <h2 style="margin:0 0 10px; font-family:'Unbounded'; font-weight:800; font-size:24px; text-transform:uppercase;">C'est réservé <span style="color:#ff1a1a;">&#10022;</span></h2>
     <p style="margin:0 0 6px; color:#f2f0f1; font-size:16px;">${sumService()} &middot; ${sumWhen()}</p>
     <p style="margin:0 0 22px; color:#9a969a; font-size:14px;">avec ${sumBarber()} &mdash; &agrave; tr&egrave;s vite chez The Line Up.</p>
     ${demo}
@@ -813,7 +850,7 @@ function renderPanel() {
         <div style="display:flex; justify-content:space-between; gap:16px;"><span style="color:#9a969a;">Prestation</span><span style="text-align:right;">${sumService()}</span></div>
         <div style="display:flex; justify-content:space-between; gap:16px;"><span style="color:#9a969a;">Barbier</span><span style="text-align:right;">${sumBarber()}</span></div>
         <div style="display:flex; justify-content:space-between; gap:16px;"><span style="color:#9a969a;">Date &amp; heure</span><span style="text-align:right;">${sumWhen()}</span></div>
-        <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px dashed #26232a; padding-top:9px; margin-top:4px;"><span style="color:#9a969a;">Total</span><span style="font-family:'Unbounded'; font-weight:800; color:#ff2450;">${sumPrice()}</span></div>
+        <div style="display:flex; justify-content:space-between; gap:16px; border-top:1px dashed #26232a; padding-top:9px; margin-top:4px;"><span style="color:#9a969a;">Total</span><span style="font-family:'Unbounded'; font-weight:800; color:#ff1a1a;">${sumPrice()}</span></div>
       </div>
     </div>
     ${actions}
@@ -827,7 +864,7 @@ function renderNav() {
   const ok = canNext();
   return `<div style="display:flex; justify-content:space-between; gap:16px; margin-top:32px; padding-top:24px; border-top:1px solid #1c1a20;">
     <button class="hv1" data-nav="back" style="cursor:pointer; visibility:${S.step>1?'visible':'hidden'}; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#9a969a; background:transparent; border:1px solid #26232a; padding:15px 26px; border-radius:6px; transition:all .2s;">← Retour</button>
-    <button data-nav="next" ${ok?'':'disabled'} style="cursor:${ok?'pointer':'not-allowed'}; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:${ok?'#ff2450':'#3a2830'}; border:none; padding:15px 34px; border-radius:6px; box-shadow:${ok?'0 0 28px rgba(255,36,80,.5)':'none'}; opacity:${ok?'1':'.55'}; transition:all .2s;">${S.step===4?'Confirmer ✦':'Continuer →'}</button>
+    <button data-nav="next" ${ok?'':'disabled'} style="cursor:${ok?'pointer':'not-allowed'}; font-family:'Unbounded'; font-weight:600; font-size:12px; letter-spacing:1px; text-transform:uppercase; color:#08080a; background:${ok?'#ff1a1a':'#2a2228'}; border:none; padding:15px 34px; border-radius:6px; box-shadow:${ok?'0 0 28px rgba(255,26,26,.5)':'none'}; opacity:${ok?'1':'.55'}; transition:all .2s;">${S.step===4?'Confirmer ✦':'Continuer →'}</button>
   </div>`;
 }
 
@@ -873,9 +910,9 @@ document.addEventListener('input', e => {
   if (['f-name','f-phone','f-email'].includes(e.target.id)) {
     const nx = document.querySelector('[data-nav="next"]'); if (!nx) return;
     const ok = canNext();
-    nx.disabled = !ok; nx.style.background = ok ? '#ff2450' : '#3a2830';
+    nx.disabled = !ok; nx.style.background = ok ? '#ff1a1a' : '#2a2228';
     nx.style.opacity = ok ? '1' : '.55'; nx.style.cursor = ok ? 'pointer' : 'not-allowed';
-    nx.style.boxShadow = ok ? '0 0 28px rgba(255,36,80,.5)' : 'none';
+    nx.style.boxShadow = ok ? '0 0 28px rgba(255,26,26,.5)' : 'none';
   }
 });
 
